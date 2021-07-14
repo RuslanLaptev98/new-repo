@@ -1,1 +1,1 @@
-RUS_ABOUT
+About Page

@@ -1,0 +1,7 @@
+@import url('../../../settings/variables.css');
+
+.TypographySmaller {
+    font-size: var(--smallertext-font-size);
+    font-weight: var(--smallertext-font-weight);
+    color: var(--main-text-color);
+}

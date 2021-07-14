@@ -1,0 +1,12 @@
+@import url('../../../settings/variables.css');
+
+.Typography {
+    font-size: var(--text-font-size);
+    font-weight: var(--text-font-weight);
+}
+.Typography-main {
+    color: var(--main-text-color);
+}
+.Typography-accent {
+    color: var(--accent-text-color);
+}

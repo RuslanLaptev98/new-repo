@@ -1,0 +1,12 @@
+@import url('../../../settings/variables.css');
+
+.TypographyBigger {
+    font-size: var(--biggertext-font-size);
+    font-weight: var(--biggertext-font-weight);
+}
+.TypographyBigger-main {
+    color: var(--main-text-color);
+}
+.TypographyBigger-accent {
+    color: var(--accent-text-color);
+}

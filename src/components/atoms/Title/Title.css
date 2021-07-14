@@ -1,0 +1,13 @@
+@import url('../../../settings/variables.css');
+
+.Title {
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    text-transform: uppercase;
+}
+.Title-main {
+    color: var(--main-text-color);
+}
+.Title-accent {
+    color: var(--accent-text-color);
+}
