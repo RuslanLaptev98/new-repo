@@ -3,7 +3,8 @@
 .AboutBlock {
     position: relative;
 }
-.AboutBlock-squarecards {
+
+.AboutBlock__squarecards {
     display: grid;
     justify-content: center;
     grid-template-columns: 350px 350px 350px;

@@ -48,7 +48,7 @@ export default function AboutBlock({
                         textMain={title.titleMain}
                         className={title.titleClassName}
                     />
-                    <div className="AboutBlock-squarecards">
+                    <div className="AboutBlock__squarecards">
                         {squareCards.map((squareCard, index) => (
                             <SquareCard squareCard={squareCards[index]} />
                         ))}
