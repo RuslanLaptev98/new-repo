@@ -18,10 +18,13 @@ export default function AboutBlock({
 }) {
     return (
         <div className="AboutBlock">
-            <Title textAccent={title.titleAccent} textMain={title.titleMain} />
-
             {type === 'withLongCards' ? (
                 <>
+                    <Title
+                        textAccent={title.titleAccent}
+                        textMain={title.titleMain}
+                        className="Title-first"
+                    />
                     <SquareImage image={sideImages[0]} />
                     <SquareImage image={sideImages[1]} />
                     <LongCard
@@ -54,23 +57,38 @@ export default function AboutBlock({
                     />
                     <SquareImage image={sideImages[2]} />
                     <SquareImage image={sideImages[3]} />
+                    <Background className={background} />
                 </>
             ) : type === 'withSquareCards' ? (
-                <div className="AboutBlock-squarecards">
-                    <SquareCard squareCard={squareCards[0]} />
-                    <SquareCard squareCard={squareCards[1]} />
-                    <SquareCard squareCard={squareCards[2]} />
-                    <SquareCard squareCard={squareCards[3]} />
-                    <SquareCard squareCard={squareCards[4]} />
-                    <SquareCard squareCard={squareCards[5]} />
-                </div>
+                <>
+                    <Title
+                        textAccent={title.titleAccent}
+                        textMain={title.titleMain}
+                        className="Title-second"
+                    />
+                    <div className="AboutBlock-squarecards">
+                        <SquareCard squareCard={squareCards[0]} />
+                        <SquareCard squareCard={squareCards[1]} />
+                        <SquareCard squareCard={squareCards[2]} />
+                        <SquareCard squareCard={squareCards[3]} />
+                        <SquareCard squareCard={squareCards[4]} />
+                        <SquareCard squareCard={squareCards[5]} />
+                    </div>
+                </>
             ) : (
-                <TypographyBigger
-                    text={paragraph.text}
-                    textColors={paragraph.textColors}
-                />
+                <>
+                    <Title
+                        textAccent={title.titleAccent}
+                        textMain={title.titleMain}
+                        className="Title-third"
+                    />
+                    <TypographyBigger
+                        text={paragraph.text}
+                        textColors={paragraph.textColors}
+                    />
+                    <Background className={background} />
+                </>
             )}
-            {background && <Background className={background} />}
         </div>
     )
 }

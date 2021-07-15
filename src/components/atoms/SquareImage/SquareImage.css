@@ -12,19 +12,3 @@
 
 .SquareImage__squarecard-top {
 }
-
-.SquareImage__sideimage {
-    position: absolute;
-}
-.SquareImage__sideimage-right {
-    right: 0px;
-}
-.SquareImage__sideimage-left {
-    left: 0px;
-}
-.SquareImage__sideimage-top {
-    top: 0px;
-}
-.SquareImage__sideimage-bottom {
-    bottom: 0px;
-}

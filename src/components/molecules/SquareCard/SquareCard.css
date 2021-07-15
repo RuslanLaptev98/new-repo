@@ -24,3 +24,6 @@
 .SquareCard .SquareImage__squarecard-top {
     margin-bottom: 39px;
 }
+.SquareCard .Typography {
+    line-height: 30px;
+}
