@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     background-color: var(--card-background-color);
-    box-shadow: 0px 14px 40px rgba(33, 36, 41, 0.16);
+    box-shadow: 0px 14px 40px var(--box-shadow-color);
     border-radius: 24px;
     position: relative;
 }
@@ -21,6 +21,9 @@
 }
 
 .LongCard-left .Typography {
+    transform: rotate(-1deg);
+}
+.LongCard-left .TypographySmaller {
     transform: rotate(-1deg);
 }
 .LongCard-right .Typography {

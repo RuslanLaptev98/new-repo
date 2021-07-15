@@ -55,7 +55,6 @@ function App() {
             text: {
                 firstPart: 'Комиссия 10%',
                 secondPart: 'с каждой сделки, меньше вы не найдёте!',
-                thirdPart: '',
             },
             textColors: {
                 firstPart: 'Typography-accent',
