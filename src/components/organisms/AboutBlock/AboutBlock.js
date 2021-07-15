@@ -56,7 +56,7 @@ export default function AboutBlock({
                     <SquareImage image={sideImages[3]} />
                 </>
             ) : type === 'withSquareCards' ? (
-                <div className="AboutBlock AboutBlock-squarecards">
+                <div className="AboutBlock-squarecards">
                     <SquareCard squareCard={squareCards[0]} />
                     <SquareCard squareCard={squareCards[1]} />
                     <SquareCard squareCard={squareCards[2]} />
