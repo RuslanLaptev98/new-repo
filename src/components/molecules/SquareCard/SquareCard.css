@@ -2,6 +2,33 @@
 .SquareCard {
     position: relative;
 }
+
+.SquareCard .SquareImage {
+    width: 100px;
+    height: 100px;
+}
+.SquareCard .SquareImage-squarecard-bottom {
+    width: 40px;
+    height: 40px;
+}
+.SquareCard .SquareImage-squarecard-top {
+    margin-top: 51px;
+    margin-bottom: 39px;
+}
+
+.SquareCard .Typography {
+    line-height: 30px;
+}
+
+.SquareCard .SquareCard__bg {
+    background-color: var(--card-background-color);
+    box-shadow: 0px 14px 40px rgba(33, 36, 41, 0.16);
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    border-radius: 24px;
+}
 .SquareCard .SquareCard__bg::before {
     content: '';
     position: absolute;
@@ -24,30 +51,7 @@
     top: 291px;
     mix-blend-mode: darken;
 }
-.SquareCard .SquareImage {
-    width: 100px;
-    height: 100px;
-}
-.SquareCard .SquareImage__squarecard-bottom {
-    width: 40px;
-    height: 40px;
-}
-.SquareCard .SquareImage__squarecard-top {
-    margin-top: 51px;
-    margin-bottom: 39px;
-}
-.SquareCard .Typography {
-    line-height: 30px;
-}
-.SquareCard__bg {
-    background-color: var(--card-background-color);
-    box-shadow: 0px 14px 40px rgba(33, 36, 41, 0.16);
-    justify-content: center;
-    width: 350px;
-    height: 350px;
-    text-align: center;
-    border-radius: 24px;
-}
+
 .SquareCard__nobg {
     background-color: transparent;
     justify-content: center;

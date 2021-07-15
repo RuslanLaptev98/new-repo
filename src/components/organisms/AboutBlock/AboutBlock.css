@@ -3,6 +3,13 @@
 .AboutBlock {
     position: relative;
 }
+.AboutBlock-squarecards {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 350px 350px 350px;
+    grid-gap: 30px;
+}
+
 .AboutBlock .Title {
     text-align: center;
 }
@@ -15,15 +22,17 @@
     margin-bottom: 81px;
 }
 .AboutBlock .Title-third {
-    margin-top: 169px;
+    margin-top: -1px;
     margin-bottom: 51px;
 }
-.AboutBlock-squarecards {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 350px 350px 350px;
-    grid-gap: 30px;
+
+.AboutBlock .LongCard-left {
+    margin-left: 0px;
 }
+.AboutBlock .LongCard-right {
+    margin-right: 0px;
+}
+
 .AboutBlock .Background {
     position: absolute;
     left: -136px;
@@ -35,22 +44,23 @@
 .AboutBlock .Background-small {
     top: -115px;
 }
-.AboutBlock .SquareImage__sideimage {
+
+.AboutBlock .SquareImage-sideimage {
     position: absolute;
 }
-.AboutBlock .SquareImage__sideimage-top.SquareImage__sideimage-left {
+.AboutBlock .SquareImage-sideimage-top.SquareImage-sideimage-left {
     top: -36px;
     left: -29px;
 }
-.AboutBlock .SquareImage__sideimage-top.SquareImage__sideimage-right {
+.AboutBlock .SquareImage-sideimage-top.SquareImage-sideimage-right {
     top: -47px;
-    left: 1023px;
+    right: -54.73px;
 }
-.AboutBlock .SquareImage__sideimage-bottom.SquareImage__sideimage-left {
+.AboutBlock .SquareImage-sideimage-bottom.SquareImage-sideimage-left {
     bottom: -202.7px;
     left: -197px;
 }
-.AboutBlock .SquareImage__sideimage-bottom.SquareImage__sideimage-right {
+.AboutBlock .SquareImage-sideimage-bottom.SquareImage-sideimage-right {
     left: 997.4px;
     top: 643px;
 }

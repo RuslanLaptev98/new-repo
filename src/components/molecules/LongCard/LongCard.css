@@ -13,30 +13,27 @@
     border-radius: 24px;
     position: relative;
 }
-
 .LongCard-left {
-    margin-left: 0px;
     transform: rotate(1deg);
 }
 .LongCard-right {
-    margin-right: 0px;
     transform: rotate(-1deg);
 }
+
 .LongCard-left .Typography {
     transform: rotate(-1deg);
 }
 .LongCard-right .Typography {
     transform: rotate(1deg);
 }
+
 .LongCard .SquareImage {
     top: 18px;
-}
-.LongCard .SquareImage__longcard {
     position: absolute;
 }
-.LongCard .SquareImage__longcard-right {
+.LongCard .SquareImage-longcard-right {
     right: 18px;
 }
-.LongCard .SquareImage__longcard-left {
+.LongCard .SquareImage-longcard-left {
     left: 18px;
 }

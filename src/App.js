@@ -24,25 +24,25 @@ function App() {
             src: sideimage_1,
             alt: 'headphones',
             className:
-                'SquareImage__sideimage SquareImage__sideimage-left SquareImage__sideimage-top',
+                'SquareImage-sideimage SquareImage-sideimage-left SquareImage-sideimage-top',
         },
         {
             src: sideimage_2,
             alt: 'switchblades',
             className:
-                'SquareImage__sideimage SquareImage__sideimage-right SquareImage__sideimage-top',
+                'SquareImage-sideimage SquareImage-sideimage-right SquareImage-sideimage-top',
         },
         {
             src: sideimage_3,
             alt: 'sofa',
             className:
-                'SquareImage__sideimage SquareImage__sideimage-left SquareImage__sideimage-bottom',
+                'SquareImage-sideimage SquareImage-sideimage-left SquareImage-sideimage-bottom',
         },
         {
             src: sideimage_4,
             alt: 'scooter',
             className:
-                'SquareImage__sideimage SquareImage__sideimage-right SquareImage__sideimage-bottom',
+                'SquareImage-sideimage SquareImage-sideimage-right SquareImage-sideimage-bottom',
         },
     ]
     const longCards = [
@@ -50,7 +50,7 @@ function App() {
             image: {
                 src: longcard_1,
                 alt: '1',
-                className: 'SquareImage__longcard SquareImage__longcard-left',
+                className: 'SquareImage-longcard-left',
             },
             text: {
                 firstPart: 'Комиссия 10%',
@@ -69,7 +69,7 @@ function App() {
             image: {
                 src: longcard_2,
                 alt: '2',
-                className: 'SquareImage__longcard SquareImage__longcard-right',
+                className: 'SquareImage-longcard-right',
             },
             text: {
                 firstPart: 'Удобный',
@@ -88,7 +88,7 @@ function App() {
             image: {
                 src: longcard_3,
                 alt: '3',
-                className: 'SquareImage__longcard SquareImage__longcard-left',
+                className: 'SquareImage-longcard-left',
             },
             text: {
                 firstPart: 'Сдавайте и арендуйте в',
@@ -107,7 +107,7 @@ function App() {
             image: {
                 src: longcard_4,
                 alt: '4',
-                className: 'SquareImage__longcard SquareImage__longcard-right',
+                className: 'SquareImage-longcard-right',
             },
             text: {
                 firstPart: 'Онлайн договор',
@@ -126,7 +126,7 @@ function App() {
             image: {
                 src: longcard_5,
                 alt: '5',
-                className: 'SquareImage__longcard SquareImage__longcard-left',
+                className: 'SquareImage-longcard-left',
             },
             text: {
                 firstPart: 'Аренда осуществляется через',
@@ -146,7 +146,7 @@ function App() {
             image: {
                 src: longcard_6,
                 alt: '6',
-                className: 'SquareImage__longcard SquareImage__longcard-right',
+                className: 'SquareImage-longcard-right',
             },
             text: {
                 firstPart: 'Инструменты для',
@@ -165,7 +165,7 @@ function App() {
             image: {
                 src: longcard_7,
                 alt: '7',
-                className: 'SquareImage__longcard SquareImage__longcard-left',
+                className: 'SquareImage-longcard-left',
             },
             text: {
                 firstPart: 'Новым пользователям',
@@ -188,7 +188,7 @@ function App() {
             image: {
                 src: squarecard_1,
                 alt: 'money bag',
-                className: 'SquareImage__squarecard-top',
+                className: 'SquareImage-squarecard-top',
             },
             text: {
                 firstPart: 'Не переплачивайте за товары,',
@@ -204,7 +204,7 @@ function App() {
             image: {
                 src: squarecard_2,
                 alt: 'bar chart',
-                className: 'SquareImage__squarecard-top',
+                className: 'SquareImage-squarecard-top',
             },
             text: {
                 firstPart: 'Пробуйте и тестируйте',
@@ -220,7 +220,7 @@ function App() {
             image: {
                 src: squarecard_3,
                 alt: 'hand shake',
-                className: 'SquareImage__squarecard-top',
+                className: 'SquareImage-squarecard-top',
             },
             text: {
                 firstPart: 'Аренда – это всегда',
@@ -236,7 +236,7 @@ function App() {
             image: {
                 src: squarecard_4,
                 alt: 'trolley',
-                className: 'SquareImage__squarecard-top',
+                className: 'SquareImage-squarecard-top',
             },
             text: {
                 firstPart: 'Освободите место',
@@ -252,7 +252,7 @@ function App() {
             image: {
                 src: squarecard_5,
                 alt: 'wallet',
-                className: 'SquareImage__squarecard-top',
+                className: 'SquareImage-squarecard-top',
             },
             text: {
                 firstPart: 'Зарабатывайте',
@@ -268,7 +268,7 @@ function App() {
             image: {
                 src: squarecard_6,
                 alt: 'right-arrow',
-                className: 'SquareImage__squarecard-bottom',
+                className: 'SquareImage-squarecard-bottom',
             },
             text: {
                 firstPart: 'Попробовать бесплатно',
