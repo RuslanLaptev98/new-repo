@@ -1,1 +1,18 @@
 @import url('../../../settings/variables.css');
+
+.Background {
+    position: absolute;
+    left: -136px;
+    bottom: 0px;
+    width: 1413px;
+    height: 840.78px;
+    background: rgba(193, 222, 243, 0.16);
+    border-radius: 100px;
+    transform: matrix(1, 0.02, 0.02, -1, 0, 0);
+}
+.Background-big {
+}
+.Background-small {
+    width: 1413px;
+    height: 467.64px;
+}

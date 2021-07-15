@@ -1,1 +1,14 @@
 @import url('../../../settings/variables.css');
+
+.LongCard {
+    width: 830px;
+    height: 93.89px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--card-background-color);
+    box-shadow: 0px 14px 40px rgba(33, 36, 41, 0.16);
+    border-radius: 24px;
+}

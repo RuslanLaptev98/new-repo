@@ -1,8 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import './fonts/fonts.css'
-import './settings/variables.css'
 import App from './App'
 
 ReactDOM.render(

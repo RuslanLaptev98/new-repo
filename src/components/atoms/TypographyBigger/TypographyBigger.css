@@ -3,6 +3,7 @@
 .TypographyBigger {
     font-size: var(--biggertext-font-size);
     font-weight: var(--biggertext-font-weight);
+    text-align: center;
 }
 .TypographyBigger-main {
     color: var(--main-text-color);

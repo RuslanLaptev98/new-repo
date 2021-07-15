@@ -14,6 +14,7 @@ export default function AboutBlock({
     squareCards,
     paragraph,
     sideImages,
+    background,
 }) {
     return (
         <div className="AboutBlock">
@@ -48,8 +49,7 @@ export default function AboutBlock({
                     textColors={paragraph.textColors}
                 />
             )}
-
-            <Background />
+            {background && <Background className={background} />}
         </div>
     )
 }

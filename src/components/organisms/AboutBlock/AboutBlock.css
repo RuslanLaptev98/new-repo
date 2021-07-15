@@ -2,4 +2,8 @@
 
 .AboutBlock {
     position: relative;
+    margin-top: 58px;
+}
+.AboutBlock .Title {
+    text-align: center;
 }

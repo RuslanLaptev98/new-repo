@@ -1,1 +1,32 @@
 @import url('../../../settings/variables.css');
+
+.SquareImage__longcard {
+    position: absolute;
+}
+.SquareImage__longcard-right {
+    right: 0px;
+}
+.SquareImage__longcard-left {
+    left: 0px;
+}
+
+.SquareImage__squarecard-top {
+}
+.SquareImage__squarecard-bottom {
+}
+
+.SquareImage__sideimage {
+    position: absolute;
+}
+.SquareImage__sideimage-right {
+    right: 0px;
+}
+.SquareImage__sideimage-left {
+    left: 0px;
+}
+.SquareImage__sideimage-top {
+    top: 0px;
+}
+.SquareImage__sideimage-bottom {
+    bottom: 0px;
+}
