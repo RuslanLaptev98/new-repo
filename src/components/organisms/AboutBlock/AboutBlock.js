@@ -24,25 +24,46 @@ export default function AboutBlock({
                 <>
                     <SquareImage image={sideImages[0]} />
                     <SquareImage image={sideImages[1]} />
-                    <LongCard longCard={longCards[0]} />
-                    <LongCard longCard={longCards[1]} />
-                    <LongCard longCard={longCards[2]} />
-                    <LongCard longCard={longCards[3]} />
-                    <LongCard longCard={longCards[4]} />
-                    <LongCard longCard={longCards[5]} />
-                    <LongCard longCard={longCards[6]} />
+                    <LongCard
+                        longCard={longCards[0]}
+                        longCardPosition={'LongCard-left'}
+                    />
+                    <LongCard
+                        longCard={longCards[1]}
+                        longCardPosition={'LongCard-right'}
+                    />
+                    <LongCard
+                        longCard={longCards[2]}
+                        longCardPosition={'LongCard-left'}
+                    />
+                    <LongCard
+                        longCard={longCards[3]}
+                        longCardPosition={'LongCard-right'}
+                    />
+                    <LongCard
+                        longCard={longCards[4]}
+                        longCardPosition={'LongCard-left'}
+                    />
+                    <LongCard
+                        longCard={longCards[5]}
+                        longCardPosition={'LongCard-right'}
+                    />
+                    <LongCard
+                        longCard={longCards[6]}
+                        longCardPosition={'LongCard-left'}
+                    />
                     <SquareImage image={sideImages[2]} />
                     <SquareImage image={sideImages[3]} />
                 </>
             ) : type === 'withSquareCards' ? (
-                <>
+                <div className="AboutBlock AboutBlock-squarecards">
                     <SquareCard squareCard={squareCards[0]} />
                     <SquareCard squareCard={squareCards[1]} />
                     <SquareCard squareCard={squareCards[2]} />
                     <SquareCard squareCard={squareCards[3]} />
                     <SquareCard squareCard={squareCards[4]} />
                     <SquareCard squareCard={squareCards[5]} />
-                </>
+                </div>
             ) : (
                 <TypographyBigger
                     text={paragraph.text}

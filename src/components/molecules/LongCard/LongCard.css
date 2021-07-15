@@ -12,3 +12,20 @@
     box-shadow: 0px 14px 40px rgba(33, 36, 41, 0.16);
     border-radius: 24px;
 }
+.LongCard-left {
+    margin-left: 0px;
+    transform: rotate(1deg);
+}
+.LongCard-right {
+    margin-right: 0px;
+    transform: rotate(-1deg);
+}
+.LongCard .SquareImage {
+    top: 18px;
+}
+.LongCard .SquareImage__longcard-right {
+    right: 18px;
+}
+.LongCard .SquareImage__longcard-left {
+    left: 18px;
+}
