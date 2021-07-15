@@ -163,7 +163,7 @@ function App() {
             },
             text: {
                 firstPart: 'Новым пользователям',
-                secondPart: '\nбесплатный месяц подписки',
+                secondPart: `бесплатный месяц подписки`,
                 thirdPart: 'на сервисе',
             },
             textColors: {

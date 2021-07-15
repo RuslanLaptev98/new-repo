@@ -6,11 +6,23 @@ import Typography from './../../atoms/Typography/Typography'
 export default function SquareCard({ squareCard }) {
     return (
         <div className="SquareCard">
-            <SquareImage image={squareCard.image} />
-            <Typography
-                text={squareCard.text}
-                textColors={squareCard.textColors}
-            />
+            {!squareCard.background ? (
+                <div className="SquareCard__nobg">
+                    <Typography
+                        text={squareCard.text}
+                        textColors={squareCard.textColors}
+                    />
+                    <SquareImage image={squareCard.image} />
+                </div>
+            ) : (
+                <div className="SquareCard__bg">
+                    <SquareImage image={squareCard.image} />
+                    <Typography
+                        text={squareCard.text}
+                        textColors={squareCard.textColors}
+                    />
+                </div>
+            )}
         </div>
     )
 }

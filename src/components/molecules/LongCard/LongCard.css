@@ -20,6 +20,12 @@
     margin-right: 0px;
     transform: rotate(-1deg);
 }
+.LongCard-left .Typography {
+    transform: rotate(-1deg);
+}
+.LongCard-right .Typography {
+    transform: rotate(1deg);
+}
 .LongCard .SquareImage {
     top: 18px;
 }
