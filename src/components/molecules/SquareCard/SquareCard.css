@@ -2,9 +2,6 @@
 .SquareCard {
     position: relative;
 }
-.SquareCard .SquareCard__bg {
-    box-sizing: border-box;
-}
 .SquareCard .SquareCard__bg::before {
     content: '';
     position: absolute;

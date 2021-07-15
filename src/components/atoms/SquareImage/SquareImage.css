@@ -1,14 +1,1 @@
 @import url('../../../settings/variables.css');
-
-.SquareImage__longcard {
-    position: absolute;
-}
-.SquareImage__longcard-right {
-    right: 0px;
-}
-.SquareImage__longcard-left {
-    left: 0px;
-}
-
-.SquareImage__squarecard-top {
-}

@@ -24,6 +24,11 @@
     grid-template-columns: 350px 350px 350px;
     grid-gap: 30px;
 }
+.AboutBlock .Background {
+    position: absolute;
+    left: -136px;
+    width: 1413px;
+}
 .AboutBlock .Background-big {
     top: 88px;
 }

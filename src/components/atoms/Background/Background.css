@@ -1,10 +1,7 @@
 @import url('../../../settings/variables.css');
 
 .Background {
-    position: absolute;
-    left: -136px;
-    width: 1413px;
-    background: rgba(193, 222, 243, 0.16);
+    background: var(--figure-background-color);
     border-radius: 100px;
     transform: matrix(1, 0.02, 0.02, -1, 0, 0);
 }

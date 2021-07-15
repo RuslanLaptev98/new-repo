@@ -31,6 +31,9 @@
 .LongCard .SquareImage {
     top: 18px;
 }
+.LongCard .SquareImage__longcard {
+    position: absolute;
+}
 .LongCard .SquareImage__longcard-right {
     right: 18px;
 }

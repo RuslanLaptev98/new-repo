@@ -3,7 +3,7 @@
     --main-text-color: #212429;
     --accent-text-color: #ffb400;
     --main-background-color: #f8f8f8;
-    --figure-background-color: #eff4f7;
+    --figure-background-color: rgba(193, 222, 243, 0.16);
     --card-background-color: #fff;
 
     /* font sizes */
