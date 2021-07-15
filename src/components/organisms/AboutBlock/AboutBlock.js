@@ -23,38 +23,20 @@ export default function AboutBlock({
                     <Title
                         textAccent={title.titleAccent}
                         textMain={title.titleMain}
-                        className="Title-first"
+                        className={title.titleClassName}
                     />
                     <SquareImage image={sideImages[0]} />
                     <SquareImage image={sideImages[1]} />
-                    <LongCard
-                        longCard={longCards[0]}
-                        longCardPosition={'LongCard-left'}
-                    />
-                    <LongCard
-                        longCard={longCards[1]}
-                        longCardPosition={'LongCard-right'}
-                    />
-                    <LongCard
-                        longCard={longCards[2]}
-                        longCardPosition={'LongCard-left'}
-                    />
-                    <LongCard
-                        longCard={longCards[3]}
-                        longCardPosition={'LongCard-right'}
-                    />
-                    <LongCard
-                        longCard={longCards[4]}
-                        longCardPosition={'LongCard-left'}
-                    />
-                    <LongCard
-                        longCard={longCards[5]}
-                        longCardPosition={'LongCard-right'}
-                    />
-                    <LongCard
-                        longCard={longCards[6]}
-                        longCardPosition={'LongCard-left'}
-                    />
+                    {longCards.map((longCard, index) => (
+                        <LongCard
+                            longCard={longCards[index]}
+                            longCardPosition={
+                                index % 2 === 1
+                                    ? 'LongCard-right'
+                                    : 'LongCard-left'
+                            }
+                        />
+                    ))}
                     <SquareImage image={sideImages[2]} />
                     <SquareImage image={sideImages[3]} />
                     <Background className={background} />
@@ -64,15 +46,12 @@ export default function AboutBlock({
                     <Title
                         textAccent={title.titleAccent}
                         textMain={title.titleMain}
-                        className="Title-second"
+                        className={title.titleClassName}
                     />
                     <div className="AboutBlock-squarecards">
-                        <SquareCard squareCard={squareCards[0]} />
-                        <SquareCard squareCard={squareCards[1]} />
-                        <SquareCard squareCard={squareCards[2]} />
-                        <SquareCard squareCard={squareCards[3]} />
-                        <SquareCard squareCard={squareCards[4]} />
-                        <SquareCard squareCard={squareCards[5]} />
+                        {squareCards.map((squareCard, index) => (
+                            <SquareCard squareCard={squareCards[index]} />
+                        ))}
                     </div>
                 </>
             ) : (
@@ -80,7 +59,7 @@ export default function AboutBlock({
                     <Title
                         textAccent={title.titleAccent}
                         textMain={title.titleMain}
-                        className="Title-third"
+                        className={title.titleClassName}
                     />
                     <TypographyBigger
                         text={paragraph.text}

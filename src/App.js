@@ -18,6 +18,27 @@ import sideimage_3 from './assets/sideimages/sofa.svg'
 import sideimage_4 from './assets/sideimages/scooter.svg'
 
 function App() {
+    /* Типы, тайтлы, бэкграунды блоков */
+    const types = ['withLongCards', 'withSquareCards', 'withBiggerText']
+    const titles = [
+        {
+            titleAccent: 'почему именно мы',
+            titleMain: 'и никто другой',
+            titleClassName: 'Title-first',
+        },
+        {
+            titleAccent: `зачем сдавать \\ брать`,
+            titleMain: 'вещи в аренду',
+            titleClassName: 'Title-second',
+        },
+        {
+            titleAccent: 'о создании',
+            titleMain: 'сервиса',
+            titleClassName: 'Title-third',
+        },
+    ]
+    const backgrounds = ['Background-big', '', 'Background-small']
+
     /* Контент первого блока */
     const sideImages = [
         {
@@ -59,10 +80,7 @@ function App() {
             textColors: {
                 firstPart: 'Typography-accent',
                 secondPart: 'Typography-main',
-                thirdPart: '',
             },
-            smallerText: '',
-            zIndex: 2,
         },
         {
             image: {
@@ -73,15 +91,11 @@ function App() {
             text: {
                 firstPart: 'Удобный',
                 secondPart: 'и практичный дизайн',
-                thirdPart: '',
             },
             textColors: {
                 firstPart: 'Typography-accent',
                 secondPart: 'Typography-main',
-                thirdPart: '',
             },
-            smallerText: '',
-            zIndex: 3,
         },
         {
             image: {
@@ -92,15 +106,11 @@ function App() {
             text: {
                 firstPart: 'Сдавайте и арендуйте в',
                 secondPart: '4 клика!',
-                thirdPart: '',
             },
             textColors: {
                 firstPart: 'Typography-main',
                 secondPart: 'Typography-accent',
-                thirdPart: '',
             },
-            smallerText: '',
-            zIndex: 4,
         },
         {
             image: {
@@ -111,15 +121,11 @@ function App() {
             text: {
                 firstPart: 'Онлайн договор',
                 secondPart: 'аренды прямо на сайте',
-                thirdPart: '',
             },
             textColors: {
                 firstPart: 'Typography-accent',
                 secondPart: 'Typography-main',
-                thirdPart: '',
             },
-            smallerText: '',
-            zIndex: 5,
         },
         {
             image: {
@@ -130,16 +136,13 @@ function App() {
             text: {
                 firstPart: 'Аренда осуществляется через',
                 secondPart: 'безопасную сделку',
-                thirdPart: '',
             },
             textColors: {
                 firstPart: 'Typography-main',
                 secondPart: 'Typography-accent',
-                thirdPart: '',
             },
             smallerText:
                 'Холдинг средств на сайте вплоть до конца сроков аренды',
-            zIndex: 6,
         },
         {
             image: {
@@ -157,8 +160,6 @@ function App() {
                 secondPart: 'Typography-accent',
                 thirdPart: 'Typography-main',
             },
-            smallerText: '',
-            zIndex: 7,
         },
         {
             image: {
@@ -176,8 +177,6 @@ function App() {
                 secondPart: 'Typography-accent',
                 thirdPart: 'Typography-main',
             },
-            smallerText: '',
-            zIndex: 8,
         },
     ]
 
@@ -271,11 +270,9 @@ function App() {
             },
             text: {
                 firstPart: 'Попробовать бесплатно',
-                secondPart: '',
             },
             textColors: {
                 firstPart: 'Typography-accent',
-                secondPart: '',
             },
             background: false,
         },
@@ -303,31 +300,22 @@ function App() {
     return (
         <div className="App">
             <AboutBlock
-                type="withLongCards"
-                title={{
-                    titleAccent: 'почему именно мы',
-                    titleMain: 'и никто другой',
-                }}
+                type={types[0]}
+                title={titles[0]}
                 longCards={longCards}
                 sideImages={sideImages}
-                background="Background-big"
+                background={backgrounds[0]}
             />
             <AboutBlock
-                type="withSquareCards"
-                title={{
-                    titleAccent: `зачем сдавать \\ брать`,
-                    titleMain: 'вещи в аренду',
-                }}
+                type={types[1]}
+                title={titles[1]}
                 squareCards={squareCards}
             />
             <AboutBlock
-                type="withBiggerText"
-                title={{
-                    titleAccent: 'о создании',
-                    titleMain: 'сервиса',
-                }}
+                type={types[2]}
+                title={titles[2]}
                 paragraph={paragraph}
-                background="Background-small"
+                background={backgrounds[2]}
             />
         </div>
     )
