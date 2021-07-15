@@ -1,60 +1,68 @@
 import React from 'react'
+import './TypographyBigger.css'
 
-export default function TypographyBigger({
-    textFirstPart,
-    textFirstPartColor,
-    textSecondPart,
-    textSecondPartColor,
-    textThirdPart,
-    textThirdPartColor,
-    textFourthPart,
-    textFourthPartColor,
-    textFifthPart,
-    textFifthPartColor,
-}) {
+export default function TypographyBigger({ text, textColors }) {
     return (
         <div className="TypographyBigger">
-            {textFifthPart ? (
+            {text.fifthPart ? (
                 <>
-                    <span className={textFirstPartColor}>{textFirstPart}</span>{' '}
-                    <span className={textSecondPartColor}>
-                        {textSecondPart}
+                    <span className={textColors.firstPart}>
+                        {text.firstPart}
                     </span>{' '}
-                    <span className={textThirdPartColor}>{textThirdPart}</span>{' '}
-                    <span className={textFourthPartColor}>
-                        {textFourthPart}
+                    <span className={textColors.secondPart}>
+                        {text.secondPart}
                     </span>{' '}
-                    <span className={textFifthPartColor}>{textFifthPart}</span>
-                </>
-            ) : textFourthPart ? (
-                <>
-                    <span className={textFirstPartColor}>{textFirstPart}</span>{' '}
-                    <span className={textSecondPartColor}>
-                        {textSecondPart}
+                    <span className={textColors.thirdPart}>
+                        {text.thirdPart}
                     </span>{' '}
-                    <span className={textThirdPartColor}>{textThirdPart}</span>{' '}
-                    <span className={textFourthPartColor}>
-                        {textFourthPart}
+                    <span className={textColors.fourthPart}>
+                        {text.fourthPart}
+                    </span>{' '}
+                    <span className={textColors.fifthPart}>
+                        {text.fifthPart}
                     </span>
                 </>
-            ) : textThirdPart ? (
+            ) : text.fourthPart ? (
                 <>
-                    <span className={textFirstPartColor}>{textFirstPart}</span>{' '}
-                    <span className={textSecondPartColor}>
-                        {textSecondPart}
+                    <span className={textColors.firstPart}>
+                        {text.firstPart}
                     </span>{' '}
-                    <span className={textThirdPartColor}>{textThirdPart}</span>
+                    <span className={textColors.secondPart}>
+                        {text.secondPart}
+                    </span>{' '}
+                    <span className={textColors.thirdPart}>
+                        {text.thirdPart}
+                    </span>{' '}
+                    <span className={textColors.fourthPart}>
+                        {text.fourthPart}
+                    </span>
                 </>
-            ) : textSecondPart ? (
+            ) : text.thirdPart ? (
                 <>
-                    <span className={textFirstPartColor}>{textFirstPart}</span>{' '}
-                    <span className={textSecondPartColor}>
-                        {textSecondPart}
+                    <span className={textColors.firstPart}>
+                        {text.firstPart}
+                    </span>{' '}
+                    <span className={textColors.secondPart}>
+                        {text.secondPart}
+                    </span>{' '}
+                    <span className={textColors.thirdPart}>
+                        {text.thirdPart}
+                    </span>
+                </>
+            ) : text.secondPart ? (
+                <>
+                    <span className={textColors.firstPart}>
+                        {text.firstPart}
+                    </span>{' '}
+                    <span className={textColors.secondPart}>
+                        {text.secondPart}
                     </span>
                 </>
             ) : (
                 <>
-                    <span className={textFirstPartColor}>{textFirstPart}</span>
+                    <span className={textColors.firstPart}>
+                        {text.firstPart}
+                    </span>
                 </>
             )}
         </div>

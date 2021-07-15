@@ -1,32 +1,35 @@
 import React from 'react'
-export default function Typography({
-    textFirstPart,
-    textFirstPartColor,
-    textSecondPart,
-    textSecondPartColor,
-    textThirdPart,
-    textThirdPartColor,
-}) {
+import './Typography.css'
+
+export default function Typography({ text, textColors }) {
     return (
         <div className="Typography">
-            {textThirdPart ? (
+            {text.thirdPart ? (
                 <>
-                    <span className={textFirstPartColor}>{textFirstPart}</span>{' '}
-                    <span className={textSecondPartColor}>
-                        {textSecondPart}
+                    <span className={textColors.firstPart}>
+                        {text.firstPart}
                     </span>{' '}
-                    <span className={textThirdPartColor}>{textThirdPart}</span>
+                    <span className={textColors.secondPart}>
+                        {text.secondPart}
+                    </span>{' '}
+                    <span className={textColors.thirdPart}>
+                        {text.thirdPart}
+                    </span>
                 </>
-            ) : textSecondPart ? (
+            ) : text.secondPart ? (
                 <>
-                    <span className={textFirstPartColor}>{textFirstPart}</span>{' '}
-                    <span className={textSecondPartColor}>
-                        {textSecondPart}
+                    <span className={textColors.firstPart}>
+                        {text.firstPart}
+                    </span>{' '}
+                    <span className={textColors.secondPart}>
+                        {text.secondPart}
                     </span>
                 </>
             ) : (
                 <>
-                    <span className={textFirstPartColor}>{textFirstPart}</span>
+                    <span className={textColors.firstPart}>
+                        {text.firstPart}
+                    </span>
                 </>
             )}
         </div>

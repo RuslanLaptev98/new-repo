@@ -1,1 +1,5 @@
 @import url('../../../settings/variables.css');
+
+.AboutBlock {
+    position: relative;
+}
