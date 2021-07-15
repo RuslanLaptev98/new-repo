@@ -6,7 +6,7 @@
     padding: 0px;
 }
 body {
-    background: var(--main-background-color);
+    background: #f8f8f8;
 }
 .App {
     width: 1140px;

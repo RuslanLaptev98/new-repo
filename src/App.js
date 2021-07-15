@@ -63,6 +63,7 @@ function App() {
                 thirdPart: '',
             },
             smallerText: '',
+            zIndex: 2,
         },
         {
             image: {
@@ -81,6 +82,7 @@ function App() {
                 thirdPart: '',
             },
             smallerText: '',
+            zIndex: 3,
         },
         {
             image: {
@@ -99,6 +101,7 @@ function App() {
                 thirdPart: '',
             },
             smallerText: '',
+            zIndex: 4,
         },
         {
             image: {
@@ -117,6 +120,7 @@ function App() {
                 thirdPart: '',
             },
             smallerText: '',
+            zIndex: 5,
         },
         {
             image: {
@@ -136,6 +140,7 @@ function App() {
             },
             smallerText:
                 'Холдинг средств на сайте вплоть до конца сроков аренды',
+            zIndex: 6,
         },
         {
             image: {
@@ -154,6 +159,7 @@ function App() {
                 thirdPart: 'Typography-main',
             },
             smallerText: '',
+            zIndex: 7,
         },
         {
             image: {
@@ -172,6 +178,7 @@ function App() {
                 thirdPart: 'Typography-main',
             },
             smallerText: '',
+            zIndex: 8,
         },
     ]
 

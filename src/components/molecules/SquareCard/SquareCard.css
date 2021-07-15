@@ -1,6 +1,31 @@
 @import url('../../../settings/variables.css');
-
 .SquareCard {
+    position: relative;
+}
+.SquareCard .SquareCard__bg {
+    box-sizing: border-box;
+}
+.SquareCard .SquareCard__bg::before {
+    content: '';
+    position: absolute;
+    width: 348px;
+    height: 348px;
+    background-color: #f8f8f8;
+    border-radius: 348px;
+    top: -204px;
+    left: -118px;
+    mix-blend-mode: darken;
+}
+.SquareCard .SquareCard__bg::after {
+    content: '';
+    position: absolute;
+    width: 229px;
+    height: 229px;
+    background-color: #f8f8f8;
+    border-radius: 229px;
+    left: 227px;
+    top: 291px;
+    mix-blend-mode: darken;
 }
 .SquareCard .SquareImage {
     width: 100px;
