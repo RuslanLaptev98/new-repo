@@ -2,69 +2,79 @@ import React from 'react'
 import './TypographyBigger.css'
 
 export default function TypographyBigger({ text, textColors }) {
-    return (
-        <div className="TypographyBigger">
-            {text.fifthPart ? (
-                <>
-                    <span className={textColors.firstPart}>
-                        {text.firstPart}
-                    </span>{' '}
-                    <span className={textColors.secondPart}>
-                        {text.secondPart}
-                    </span>{' '}
-                    <span className={textColors.thirdPart}>
-                        {text.thirdPart}
-                    </span>{' '}
-                    <span className={textColors.fourthPart}>
-                        {text.fourthPart}
-                    </span>{' '}
-                    <span className={textColors.fifthPart}>
-                        {text.fifthPart}
-                    </span>
-                </>
-            ) : text.fourthPart ? (
-                <>
-                    <span className={textColors.firstPart}>
-                        {text.firstPart}
-                    </span>{' '}
-                    <span className={textColors.secondPart}>
-                        {text.secondPart}
-                    </span>{' '}
-                    <span className={textColors.thirdPart}>
-                        {text.thirdPart}
-                    </span>{' '}
-                    <span className={textColors.fourthPart}>
-                        {text.fourthPart}
-                    </span>
-                </>
-            ) : text.thirdPart ? (
-                <>
-                    <span className={textColors.firstPart}>
-                        {text.firstPart}
-                    </span>{' '}
-                    <span className={textColors.secondPart}>
-                        {text.secondPart}
-                    </span>{' '}
-                    <span className={textColors.thirdPart}>
-                        {text.thirdPart}
-                    </span>
-                </>
-            ) : text.secondPart ? (
-                <>
-                    <span className={textColors.firstPart}>
-                        {text.firstPart}
-                    </span>{' '}
-                    <span className={textColors.secondPart}>
-                        {text.secondPart}
-                    </span>
-                </>
-            ) : (
-                <>
-                    <span className={textColors.firstPart}>
-                        {text.firstPart}
-                    </span>
-                </>
-            )}
-        </div>
-    )
+    const renderedText = () => {
+        switch (true) {
+            case Boolean(text.fifthPart):
+                return (
+                    <>
+                        <span className={textColors.firstPart}>
+                            {text.firstPart}
+                        </span>{' '}
+                        <span className={textColors.secondPart}>
+                            {text.secondPart}
+                        </span>{' '}
+                        <span className={textColors.thirdPart}>
+                            {text.thirdPart}
+                        </span>{' '}
+                        <span className={textColors.fourthPart}>
+                            {text.fourthPart}
+                        </span>{' '}
+                        <span className={textColors.fifthPart}>
+                            {text.fifthPart}
+                        </span>
+                    </>
+                )
+            case Boolean(text.fourthPart):
+                return (
+                    <>
+                        <span className={textColors.firstPart}>
+                            {text.firstPart}
+                        </span>{' '}
+                        <span className={textColors.secondPart}>
+                            {text.secondPart}
+                        </span>{' '}
+                        <span className={textColors.thirdPart}>
+                            {text.thirdPart}
+                        </span>{' '}
+                        <span className={textColors.fourthPart}>
+                            {text.fourthPart}
+                        </span>
+                    </>
+                )
+            case Boolean(text.thirdPart):
+                return (
+                    <>
+                        <span className={textColors.firstPart}>
+                            {text.firstPart}
+                        </span>{' '}
+                        <span className={textColors.secondPart}>
+                            {text.secondPart}
+                        </span>{' '}
+                        <span className={textColors.thirdPart}>
+                            {text.thirdPart}
+                        </span>
+                    </>
+                )
+            case Boolean(text.secondPart):
+                return (
+                    <>
+                        <span className={textColors.firstPart}>
+                            {text.firstPart}
+                        </span>{' '}
+                        <span className={textColors.secondPart}>
+                            {text.secondPart}
+                        </span>
+                    </>
+                )
+            default:
+                return (
+                    <>
+                        <span className={textColors.firstPart}>
+                            {text.firstPart}
+                        </span>
+                    </>
+                )
+        }
+    }
+    return <div className="TypographyBigger">{renderedText()}</div>
 }
