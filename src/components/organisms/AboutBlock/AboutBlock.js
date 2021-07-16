@@ -70,6 +70,7 @@ export default function AboutBlock({
                                     ? 'LongCard-right'
                                     : 'LongCard-left'
                             }
+                            index={index}
                         />
                     ))}
                     <Background className={background} />

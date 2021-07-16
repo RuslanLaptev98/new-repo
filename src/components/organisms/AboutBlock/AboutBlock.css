@@ -25,11 +25,35 @@
     margin-bottom: 51px;
 }
 
+.AboutBlock .LongCard {
+    margin-bottom: 5px;
+}
 .AboutBlock .LongCard-left {
     margin-left: 0px;
 }
 .AboutBlock .LongCard-right {
     margin-right: 0px;
+}
+.AboutBlock .LongCard-0 {
+    z-index: 10;
+}
+.AboutBlock .LongCard-1 {
+    z-index: 9;
+}
+.AboutBlock .LongCard-2 {
+    z-index: 8;
+}
+.AboutBlock .LongCard-3 {
+    z-index: 7;
+}
+.AboutBlock .LongCard-4 {
+    z-index: 6;
+}
+.AboutBlock .LongCard-5 {
+    z-index: 5;
+}
+.AboutBlock .LongCard-6 {
+    z-index: 4;
 }
 
 .AboutBlock .Background {
