@@ -40,3 +40,8 @@
 .LongCard .SquareImage-longcard-left {
     left: 18px;
 }
+
+.LongCard .Typography {
+    max-width: 570px;
+    text-align: center;
+}

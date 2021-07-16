@@ -65,3 +65,8 @@
     left: 997.4px;
     top: 643px;
 }
+
+.AboutBlock .TypographyBigger {
+    margin: auto;
+    max-width: 957px;
+}

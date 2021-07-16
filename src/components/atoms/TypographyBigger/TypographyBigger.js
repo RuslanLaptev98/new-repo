@@ -19,6 +19,7 @@ export default function TypographyBigger({ text, textColors }) {
                         <span className={textColors.fourthPart}>
                             {text.fourthPart}
                         </span>{' '}
+                        <br />
                         <span className={textColors.fifthPart}>
                             {text.fifthPart}
                         </span>
