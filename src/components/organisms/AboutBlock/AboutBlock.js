@@ -4,16 +4,14 @@ import Title from '../../molecules/Title/Title'
 import Background from '../../atoms/Background/Background'
 import LongCard from '../../molecules/LongCard/LongCard'
 import SquareCard from '../../molecules/SquareCard/SquareCard'
-import SquareImage from '../../atoms/SquareImage/SquareImage'
 import CustomTxt from '../../atoms/CustomTxt/CustomTxt'
 
 export default function AboutBlock({
     type,
     title,
-    sideImages,
-    background,
     longCards,
     squareCards,
+    background,
 }) {
     /* Параграф для третьего блока */
     const paragraph = {
@@ -64,8 +62,6 @@ export default function AboutBlock({
                 <>
                     {/* Первый блок с длинными карточками */}
                     <Title title={title} />
-                    <SquareImage image={sideImages[0]} />
-                    <SquareImage image={sideImages[1]} />
                     {longCards.map((longCard, index) => (
                         <LongCard
                             longCard={longCards[index]}
@@ -76,8 +72,6 @@ export default function AboutBlock({
                             }
                         />
                     ))}
-                    <SquareImage image={sideImages[2]} />
-                    <SquareImage image={sideImages[3]} />
                     <Background className={background} />
                 </>
             ) : type === 1 ? (

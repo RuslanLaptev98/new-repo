@@ -34,48 +34,41 @@ export default function About() {
             fontSize: 'var(--text-font-size)',
             fontWeight: 'var(--text-font-weight)',
         },
+        title: {
+            fontSize: 'var(--title-font-size)',
+            fontWeight: 'var(--title-font-weight)',
+            textTransform: 'uppercase',
+        },
     }
-    /* Изображения первого блока */
-    const sideImages = [
-        {
-            src: sideimage_1,
-            alt: 'headphones',
-            className:
-                'SquareImage-sideimage SquareImage-sideimage-left SquareImage-sideimage-top',
-        },
-        {
-            src: sideimage_2,
-            alt: 'switchblades',
-            className:
-                'SquareImage-sideimage SquareImage-sideimage-right SquareImage-sideimage-top',
-        },
-        {
-            src: sideimage_3,
-            alt: 'sofa',
-            className:
-                'SquareImage-sideimage SquareImage-sideimage-left SquareImage-sideimage-bottom',
-        },
-        {
-            src: sideimage_4,
-            alt: 'scooter',
-            className:
-                'SquareImage-sideimage SquareImage-sideimage-right SquareImage-sideimage-bottom',
-        },
-    ]
+
+    /* Массив бэкграундов */
+    const backgrounds = ['Background-big', '', 'Background-small']
 
     /* Массив тайтлов */
     const titles = [
         {
+            imageLeft: {
+                src: sideimage_1,
+                alt: 'headphones',
+                className:
+                    'SquareImage-sideimage SquareImage-sideimage-left SquareImage-sideimage-top',
+            },
+            imageRight: {
+                src: sideimage_2,
+                alt: 'switchblades',
+                className:
+                    'SquareImage-sideimage SquareImage-sideimage-right SquareImage-sideimage-top',
+            },
             txtArr: [
                 {
                     text: 'почему именно мы',
                     color: colors.accent,
-                    styles: {},
+                    styles: styles.title,
                 },
                 {
                     text: 'и никто другой',
                     color: colors.main,
-                    styles: {},
+                    styles: styles.title,
                 },
             ],
             customCss: {
@@ -84,16 +77,28 @@ export default function About() {
             },
         },
         {
+            imageLeft: {
+                src: sideimage_3,
+                alt: 'sofa',
+                className:
+                    'SquareImage-sideimage SquareImage-sideimage-left SquareImage-sideimage-bottom',
+            },
+            imageRight: {
+                src: sideimage_4,
+                alt: 'scooter',
+                className:
+                    'SquareImage-sideimage SquareImage-sideimage-right SquareImage-sideimage-bottom',
+            },
             txtArr: [
                 {
                     text: 'зачем сдавать \\ брать',
                     color: colors.accent,
-                    styles: {},
+                    styles: styles.title,
                 },
                 {
                     text: 'вещи в аренду',
                     color: colors.main,
-                    styles: {},
+                    styles: styles.title,
                 },
             ],
             customCss: {
@@ -106,12 +111,12 @@ export default function About() {
                 {
                     text: 'о создании',
                     color: colors.accent,
-                    styles: {},
+                    styles: styles.title,
                 },
                 {
                     text: 'сервиса',
                     color: colors.main,
-                    styles: {},
+                    styles: styles.title,
                 },
             ],
             customCss: {
@@ -440,19 +445,15 @@ export default function About() {
 
     return (
         <div className="About">
-            <AboutBlock
-                type={0}
-                title={titles[0]}
-                sideImages={sideImages}
-                background="Background-big"
-                longCards={longCards}
-            />
-            <AboutBlock type={1} title={titles[1]} squareCards={squareCards} />
-            <AboutBlock
-                type={2}
-                title={titles[2]}
-                background="Background-small"
-            />
+            {titles.map((block, i) => (
+                <AboutBlock
+                    type={i}
+                    title={titles[i]}
+                    background={backgrounds[i]}
+                    longCards={longCards}
+                    squareCards={squareCards}
+                />
+            ))}
         </div>
     )
 }

@@ -1,5 +1,3 @@
-@import url('../../../settings/variables.css');
-
 .AboutBlock {
     position: relative;
 }
@@ -58,15 +56,10 @@
     right: -54.73px;
 }
 .AboutBlock .SquareImage-sideimage-bottom.SquareImage-sideimage-left {
-    bottom: -202.7px;
+    top: -225px;
     left: -197px;
 }
 .AboutBlock .SquareImage-sideimage-bottom.SquareImage-sideimage-right {
     left: 997.4px;
-    top: 643px;
-}
-
-.AboutBlock .TypographyBigger {
-    margin: auto;
-    max-width: 957px;
+    top: -277px;
 }

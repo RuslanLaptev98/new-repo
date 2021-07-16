@@ -1,5 +1,3 @@
-@import url('../../../settings/variables.css');
-
 .LongCard {
     width: 830px;
     height: 93.89px;
@@ -20,16 +18,6 @@
     transform: rotate(-1deg);
 }
 
-.LongCard-left .Typography {
-    transform: rotate(-1deg);
-}
-.LongCard-left .TypographySmaller {
-    transform: rotate(-1deg);
-}
-.LongCard-right .Typography {
-    transform: rotate(1deg);
-}
-
 .LongCard-left .CustomTxt {
     transform: rotate(-1deg);
 }
@@ -46,9 +34,4 @@
 }
 .LongCard .SquareImage-longcard-left {
     left: 18px;
-}
-
-.LongCard .Typography {
-    max-width: 570px;
-    text-align: center;
 }
