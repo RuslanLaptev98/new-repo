@@ -18,6 +18,8 @@ import sideimage_3 from './assets/sideimages/sofa.svg'
 import sideimage_4 from './assets/sideimages/scooter.svg'
 
 function App() {
+    /* Все динамические данные (текст, тайтлы, бэкграунды, изображения) находятся в этом компоненте и перебрасываются пропсами в остальные компоненты */
+
     /* Типы, тайтлы, бэкграунды блоков */
     const types = ['withLongCards', 'withSquareCards', 'withBiggerText']
     const titles = [
