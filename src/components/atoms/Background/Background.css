@@ -1,13 +1,18 @@
 @import url('../../../settings/variables.css');
 
 .Background {
-    background: var(--figure-background-color);
     border-radius: 100px;
     transform: matrix(1, 0.02, 0.02, -1, 0, 0);
 }
 .Background-big {
     height: 840.78px;
+    background-image: url('../../../assets/figures/background-big.svg');
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 .Background-small {
     height: 467.64px;
+    background-image: url('../../../assets/figures/background-small.svg');
+    background-repeat: no-repeat;
+    z-index: -1;
 }
