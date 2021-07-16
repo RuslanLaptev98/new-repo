@@ -1,8 +1,5 @@
 @import url('../../../settings/variables.css');
 
-.Background {
-    border-radius: 100px;
-}
 .Background-big {
     height: 840.78px;
     background-image: url('../../../assets/figures/background-big.svg');

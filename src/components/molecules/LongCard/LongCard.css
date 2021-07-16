@@ -30,6 +30,13 @@
     transform: rotate(1deg);
 }
 
+.LongCard-left .CustomTxt {
+    transform: rotate(-1deg);
+}
+.LongCard-right .CustomTxt {
+    transform: rotate(1deg);
+}
+
 .LongCard .SquareImage {
     top: 18px;
     position: absolute;

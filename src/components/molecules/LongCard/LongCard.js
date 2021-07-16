@@ -1,15 +1,13 @@
 import React from 'react'
 import './LongCard.css'
 import SquareImage from './../../atoms/SquareImage/SquareImage'
-import Typography from './../../atoms/Typography/Typography'
-import TypographySmaller from './../../atoms/TypographySmaller/TypographySmaller'
+import CustomTxt from '../../atoms/CustomTxt/CustomTxt'
 
-export default function LongCard({ longCard, longCardPosition }) {
+export default function LongCard({ longCardPosition, longCard }) {
     return (
         <div className={`LongCard ${longCardPosition}`}>
             <SquareImage image={longCard.image} />
-            <Typography text={longCard.text} textColors={longCard.textColors} />
-            <TypographySmaller text={longCard.smallerText} />
+            <CustomTxt txtArr={longCard.text} />
         </div>
     )
 }
