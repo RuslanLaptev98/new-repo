@@ -66,19 +66,58 @@ export default function About() {
     /* Массив тайтлов */
     const titles = [
         {
-            titleAccent: 'почему именно мы',
-            titleMain: 'и никто другой',
-            titleClassName: 'Title-first',
+            txtArr: [
+                {
+                    text: 'почему именно мы',
+                    color: colors.accent,
+                    styles: {},
+                },
+                {
+                    text: 'и никто другой',
+                    color: colors.main,
+                    styles: {},
+                },
+            ],
+            customCss: {
+                marginTop: '58px',
+                marginBottom: '66px',
+            },
         },
         {
-            titleAccent: `зачем сдавать \\ брать`,
-            titleMain: 'вещи в аренду',
-            titleClassName: 'Title-second',
+            txtArr: [
+                {
+                    text: 'зачем сдавать \\ брать',
+                    color: colors.accent,
+                    styles: {},
+                },
+                {
+                    text: 'вещи в аренду',
+                    color: colors.main,
+                    styles: {},
+                },
+            ],
+            customCss: {
+                marginTop: '154px',
+                marginBottom: '81px',
+            },
         },
         {
-            titleAccent: 'о создании',
-            titleMain: 'сервиса',
-            titleClassName: 'Title-third',
+            txtArr: [
+                {
+                    text: 'о создании',
+                    color: colors.accent,
+                    styles: {},
+                },
+                {
+                    text: 'сервиса',
+                    color: colors.main,
+                    styles: {},
+                },
+            ],
+            customCss: {
+                marginTop: '-1px',
+                marginBottom: '51px',
+            },
         },
     ]
 

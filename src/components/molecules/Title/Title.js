@@ -1,11 +1,11 @@
 import React from 'react'
+import CustomTxt from '../../atoms/CustomTxt/CustomTxt'
 import './Title.css'
 
-export default function Title({ textAccent, textMain, className }) {
+export default function Title({ title }) {
     return (
-        <div className={`Title ${className}`}>
-            <span className="Title-accent">{textAccent}</span>{' '}
-            <span className="Title-main">{textMain}</span>
+        <div className="Title">
+            <CustomTxt txtArr={title.txtArr} customCss={title.customCss} />
         </div>
     )
 }

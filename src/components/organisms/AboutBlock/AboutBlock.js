@@ -63,11 +63,7 @@ export default function AboutBlock({
             {type === 0 ? (
                 <>
                     {/* Первый блок с длинными карточками */}
-                    <Title
-                        textAccent={title.titleAccent}
-                        textMain={title.titleMain}
-                        className={title.titleClassName}
-                    />
+                    <Title title={title} />
                     <SquareImage image={sideImages[0]} />
                     <SquareImage image={sideImages[1]} />
                     {longCards.map((longCard, index) => (
@@ -87,11 +83,7 @@ export default function AboutBlock({
             ) : type === 1 ? (
                 <>
                     {/* Второй блок с квадратными карточками */}
-                    <Title
-                        textAccent={title.titleAccent}
-                        textMain={title.titleMain}
-                        className={title.titleClassName}
-                    />
+                    <Title title={title} />
                     <div className="AboutBlock__squarecards">
                         {squareCards.map((squareCard, index) => (
                             <SquareCard squareCard={squareCards[index]} />
@@ -101,11 +93,7 @@ export default function AboutBlock({
             ) : (
                 <>
                     {/* Третий блок с параграфом */}
-                    <Title
-                        textAccent={title.titleAccent}
-                        textMain={title.titleMain}
-                        className={title.titleClassName}
-                    />
+                    <Title title={title} />
                     <CustomTxt
                         txtArr={paragraph.txtArr}
                         customCss={paragraph.customCss}
