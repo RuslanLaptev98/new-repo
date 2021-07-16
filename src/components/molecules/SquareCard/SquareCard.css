@@ -22,6 +22,10 @@
 
 .SquareCard .SquareCard__bg {
     background-color: var(--card-background-color);
+    background-image: url('../../../assets/figures/squarecard-background.svg');
+    background-position: center;
+    background-position-y: -26px;
+    background-repeat: no-repeat;
     box-shadow: 0px 14px 40px var(--box-shadow-color);
     justify-content: center;
     width: 350px;
@@ -29,7 +33,7 @@
     text-align: center;
     border-radius: 24px;
 }
-
+/*
 .SquareCard .SquareCard__bg::before {
     content: '';
     position: absolute;
@@ -51,7 +55,7 @@
     left: 227px;
     top: 291px;
     mix-blend-mode: darken;
-}
+}*/
 .SquareCard .SquareCard__bg .Typography {
     max-width: 310px;
     margin: auto;

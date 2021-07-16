@@ -2,7 +2,6 @@
 
 .Background {
     border-radius: 100px;
-    transform: matrix(1, 0.02, 0.02, -1, 0, 0);
 }
 .Background-big {
     height: 840.78px;
@@ -14,5 +13,6 @@
     height: 467.64px;
     background-image: url('../../../assets/figures/background-small.svg');
     background-repeat: no-repeat;
+    background-position: center;
     z-index: -1;
 }
