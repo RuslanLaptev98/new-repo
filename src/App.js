@@ -17,6 +17,9 @@ import sideimage_2 from './assets/sideimages/switch.svg'
 import sideimage_3 from './assets/sideimages/sofa.svg'
 import sideimage_4 from './assets/sideimages/scooter.svg'
 
+import CustomTxt from './components/atoms/CustomTxt/CustomTxt'
+import { green } from 'jest-matcher-utils/node_modules/chalk'
+
 function App() {
     /* Все динамические данные (текст, тайтлы, бэкграунды, изображения) находятся в этом компоненте и перебрасываются пропсами в остальные компоненты */
 
