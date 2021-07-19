@@ -12,6 +12,8 @@ export default function JointCard({ mainCard, priceCard }) {
                 text={priceCard.text}
                 button={priceCard.button}
                 timeLeft={priceCard.timeLeft}
+                arrow={priceCard.arrow}
+                saleUI={priceCard.sale}
             />
         </div>
     )

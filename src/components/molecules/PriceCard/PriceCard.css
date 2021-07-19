@@ -79,3 +79,9 @@
 .PriceCard__timeleft .CustomTxt {
     margin-top: 0px;
 }
+.PriceCard__arrow {
+    position: relative;
+    display: block;
+    margin: auto;
+    z-index: 3;
+}

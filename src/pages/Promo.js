@@ -105,6 +105,7 @@ export default function Promo() {
                 current: '109',
                 prev: '169',
             },
+            sale: true,
             text: {
                 txtArr: [
                     {
@@ -147,6 +148,7 @@ export default function Promo() {
                 current: '78',
                 prev: '120',
             },
+            sale: true,
             text: {
                 txtArr: [
                     {
@@ -221,6 +223,7 @@ export default function Promo() {
                 current: '90',
                 prev: '',
             },
+            sale: false,
             text: {
                 txtArr: [
                     {
@@ -270,6 +273,7 @@ export default function Promo() {
                 current: '150',
                 prev: '',
             },
+            sale: false,
             text: {
                 txtArr: [
                     {

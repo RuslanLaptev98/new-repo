@@ -9,7 +9,14 @@ import bottomArrow from '../../../assets/pricecard-images/pc-arrow-bottom.svg'
 import CustomTxt from '../../atoms/CustomTxt/CustomTxt'
 import PayButton from '../../atoms/PayButton/PayButton'
 
-export default function PriceCard({ price, text, arrow, button, timeLeft }) {
+export default function PriceCard({
+    price,
+    text,
+    arrow,
+    button,
+    timeLeft,
+    saleUI,
+}) {
     return (
         <div className="PriceCard">
             {/* Зеленый хэдер */}
@@ -19,8 +26,16 @@ export default function PriceCard({ price, text, arrow, button, timeLeft }) {
             <img src={background} alt="" className="PriceCard__backgroundimg" />
 
             {/* Скидка */}
-            <img src={sale} alt="" className="PriceCard__salefront" />
-            <img src={saleShadow} alt="" className="PriceCard__saleshadow" />
+            {saleUI && (
+                <>
+                    <img src={sale} alt="" className="PriceCard__salefront" />
+                    <img
+                        src={saleShadow}
+                        alt=""
+                        className="PriceCard__saleshadow"
+                    />
+                </>
+            )}
 
             {/* Цена */}
             <div className="PriceCard__price">
@@ -36,10 +51,17 @@ export default function PriceCard({ price, text, arrow, button, timeLeft }) {
                 </div>
             )}
 
-            {/* Основной контент */}
-
             {/* Текст */}
             <CustomTxt txtArr={text.txtArr} customCss={text.customCss} />
+
+            {/* Стрелка */}
+            {arrow === 'top' ? (
+                <img src={topArrow} alt="" className="PriceCard__arrow" />
+            ) : arrow === 'bottom' ? (
+                <img src={bottomArrow} alt="" className="PriceCard__arrow" />
+            ) : (
+                <></>
+            )}
 
             {/* Кнопка */}
             {button && <PayButton />}
