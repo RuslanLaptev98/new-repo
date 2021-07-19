@@ -3,26 +3,9 @@
 }
 
 .AboutBlock__squarecards {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 350px 350px 350px;
-    grid-gap: 30px;
-}
-
-.AboutBlock .Title {
-    text-align: center;
-}
-.AboutBlock .Title-first {
-    margin-top: 58px;
-    margin-bottom: 66px;
-}
-.AboutBlock .Title-second {
-    margin-top: 154px;
-    margin-bottom: 81px;
-}
-.AboutBlock .Title-third {
-    margin-top: -1px;
-    margin-bottom: 51px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .AboutBlock .LongCard {
@@ -86,4 +69,8 @@
 .AboutBlock .SquareImage-sideimage-bottom.SquareImage-sideimage-right {
     left: 997.4px;
     top: -277px;
+}
+
+.AboutBlock-third {
+    margin-top: -30px;
 }

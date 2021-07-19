@@ -8,7 +8,13 @@ export default function SquareCard({ squareCard }) {
         <div className="SquareCard">
             {!squareCard.background ? (
                 <div className="SquareCard__nobg">
-                    <CustomTxt txtArr={squareCard.text} />
+                    <CustomTxt
+                        txtArr={squareCard.text}
+                        customCss={{
+                            marginTop: '150px',
+                            marginBottom: '20px',
+                        }}
+                    />
                     <SquareImage image={squareCard.image} />
                 </div>
             ) : (

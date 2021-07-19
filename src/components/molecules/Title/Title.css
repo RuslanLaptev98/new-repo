@@ -1,4 +1,5 @@
 .Title {
     font-size: var(--title-font-size);
     font-weight: var(--title-font-weight);
+    text-align: center;
 }

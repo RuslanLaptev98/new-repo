@@ -73,7 +73,9 @@ export default function AboutBlock({
                             index={index}
                         />
                     ))}
-                    <Background className={background} />
+                    <div className="AboutBlock__background">
+                        <Background className={background} />
+                    </div>
                 </>
             ) : type === 1 ? (
                 <>
@@ -86,15 +88,17 @@ export default function AboutBlock({
                     </div>
                 </>
             ) : (
-                <>
+                <div className="AboutBlock-third">
                     {/* Третий блок с параграфом */}
                     <Title title={title} />
                     <CustomTxt
                         txtArr={paragraph.txtArr}
                         customCss={paragraph.customCss}
                     />
-                    <Background className={background} />
-                </>
+                    <div className="AboutBlock__background">
+                        <Background className={background} />
+                    </div>
+                </div>
             )}
         </div>
     )

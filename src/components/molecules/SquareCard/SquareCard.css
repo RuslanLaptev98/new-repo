@@ -1,5 +1,6 @@
 .SquareCard {
     position: relative;
+    margin-bottom: 30px;
 }
 
 .SquareCard .SquareImage {
@@ -35,8 +36,4 @@
     width: 350px;
     height: 350px;
     text-align: center;
-}
-.SquareCard__nobg .CustomTxt {
-    margin-top: 150px;
-    margin-bottom: 20px;
 }

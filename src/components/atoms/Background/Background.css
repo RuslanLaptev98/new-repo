@@ -1,13 +1,13 @@
+.Background {
+    background-repeat: no-repeat;
+    z-index: -1;
+}
 .Background-big {
     height: 840.78px;
     background-image: url('../../../assets/figures/background-big.svg');
-    background-repeat: no-repeat;
-    z-index: -1;
 }
 .Background-small {
     height: 467.64px;
     background-image: url('../../../assets/figures/background-small.svg');
-    background-repeat: no-repeat;
     background-position: center;
-    z-index: -1;
 }
