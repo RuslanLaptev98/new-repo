@@ -1,0 +1,81 @@
+.PriceCard {
+    height: 533px;
+    width: 337px;
+    position: absolute;
+    top: 20px;
+    right: -25px;
+}
+.PriceCard__headerimg {
+    position: inherit;
+    top: 0px;
+    right: -16px;
+    z-index: 2;
+}
+.PriceCard__backgroundimg {
+    position: inherit;
+    top: 0px;
+    right: -54px;
+    z-index: 1;
+}
+.PriceCard__salefront {
+    position: inherit;
+    z-index: 3;
+    top: -25px;
+    right: -21px;
+}
+.PriceCard__saleshadow {
+    position: inherit;
+    z-index: 1;
+    top: -17px;
+    right: 70px;
+}
+.PriceCard__price {
+    position: relative;
+    z-index: 3;
+    display: block;
+    right: -100px;
+    top: 26px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+}
+.PriceCard__price-number {
+    font-size: 50px;
+    font-weight: 800;
+}
+.PriceCard__prevprice {
+    position: relative;
+    z-index: 3;
+    display: block;
+    right: -210px;
+    bottom: -25px;
+    color: #212429;
+    font-size: 14px;
+    font-weight: 800;
+}
+.PriceCard__prevprice-number {
+    font-size: 30px;
+    font-weight: 800;
+}
+.PriceCard .PayButton {
+    position: absolute;
+    z-index: 3;
+    bottom: 98px;
+    left: 44px;
+}
+
+.PriceCard__timeleft {
+    position: relative;
+    z-index: 3;
+    padding-left: 31px;
+}
+.PriceCard .CustomTxt {
+    position: relative;
+    z-index: 3;
+    line-height: 24px;
+    padding-left: 31px;
+    margin-top: 100px;
+}
+.PriceCard__timeleft .CustomTxt {
+    margin-top: 0px;
+}

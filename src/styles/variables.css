@@ -1,0 +1,21 @@
+:root {
+    /* colors */
+    --main-text-color: #212429;
+    --accent-text-color: #ffb400;
+    --main-background-color: #f8f8f8;
+    --figure-background-color: rgba(193, 222, 243, 0.16);
+    --card-background-color: #fff;
+    --box-shadow-color: rgba(33, 36, 41, 0.16);
+
+    /* font sizes */
+    --title-font-size: 36px;
+    --text-font-size: 18px;
+    --biggertext-font-size: 20px;
+    --smallertext-font-size: 14px;
+
+    /* fonts */
+    --title-font-weight: 900;
+    --text-font-weight: 800;
+    --biggertext-font-weight: 800;
+    --smallertext-font-weight: 600;
+}
