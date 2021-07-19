@@ -85,3 +85,8 @@
     margin: auto;
     z-index: 3;
 }
+.PriceCard__crossline {
+    position: relative;
+    right: 115px;
+    top: 4px;
+}

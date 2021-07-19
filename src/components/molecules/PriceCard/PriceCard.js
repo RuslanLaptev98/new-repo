@@ -6,6 +6,7 @@ import sale from '../../../assets/pricecard-images/pc-sale.svg'
 import saleShadow from '../../../assets/pricecard-images/pc-sale-shadow.svg'
 import topArrow from '../../../assets/pricecard-images/pc-arrow-top.svg'
 import bottomArrow from '../../../assets/pricecard-images/pc-arrow-bottom.svg'
+import crossline from '../../../assets/pricecard-images/cross-line.svg'
 import CustomTxt from '../../atoms/CustomTxt/CustomTxt'
 import PayButton from '../../atoms/PayButton/PayButton'
 
@@ -48,6 +49,11 @@ export default function PriceCard({
                         {price.prev}
                     </span>{' '}
                     ₽/день
+                    <img
+                        src={crossline}
+                        alt=""
+                        className="PriceCard__crossline"
+                    />
                 </div>
             )}
 
