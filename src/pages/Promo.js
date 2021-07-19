@@ -25,10 +25,12 @@ export default function Promo() {
         textNormal: {
             fontSize: '16px',
             fontWeight: '600',
+            lineHeight: '24px',
         },
         textBold: {
             fontSize: '16px',
             fontWeight: '800',
+            lineHeight: '24px',
         },
     }
 
@@ -294,6 +296,14 @@ export default function Promo() {
                                     ...styles.textBold,
                                 },
                             },
+                            {
+                                text: '`',
+                                color: '#fff',
+                                styles: {
+                                    textAlign: 'left',
+                                    ...styles.textBold,
+                                },
+                            },
                         ],
                     },
                     {
@@ -326,7 +336,15 @@ export default function Promo() {
                         color: colors.accent,
                         styles: { ...styles.textBold },
                     },
-
+                    {
+                        blockable: [
+                            {
+                                text: '`',
+                                color: '#fff',
+                                styles: { ...styles.textBold },
+                            },
+                        ],
+                    },
                     {
                         text: '3. скидка в 35% ',
                         color: colors.accent,
