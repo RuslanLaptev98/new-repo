@@ -11,3 +11,9 @@
     line-height: 20px;
     letter-spacing: 0.04em;
 }
+.PayButton:hover {
+    opacity: 0.9;
+}
+.PayButton:active {
+    box-shadow: none;
+}
