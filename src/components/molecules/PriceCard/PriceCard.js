@@ -22,10 +22,8 @@ export default function PriceCard({
         <div className="PriceCard">
             {/* Зеленый хэдер */}
             <img src={header} alt="" className="PriceCard__headerimg" />
-
             {/* Белый бэкграунд */}
             <img src={background} alt="" className="PriceCard__backgroundimg" />
-
             {/* Скидка */}
             {saleUI && (
                 <>

@@ -10,7 +10,7 @@ export default function Promo() {
     const colors = {
         main: 'var(--main-text-color)',
         accent: 'var(--accent-text-color)',
-        green: '#3CBF32',
+        dynamic: 'var(--dynamic-text-color)',
     }
     const styles = {
         title: {
@@ -26,9 +26,16 @@ export default function Promo() {
             fontSize: '16px',
             fontWeight: '600',
             lineHeight: '24px',
+            textAlign: 'left',
         },
         textBold: {
             fontSize: '16px',
+            fontWeight: '800',
+            lineHeight: '24px',
+            textAlign: 'left',
+        },
+        time: {
+            fontSize: '30px',
             fontWeight: '800',
             lineHeight: '24px',
         },
@@ -114,27 +121,18 @@ export default function Promo() {
                         blockable: [
                             {
                                 text: 'Будьте всегда в топе.',
-                                color: '#FFB400',
-                                styles: {
-                                    textAlign: 'left',
-                                    ...styles.textBold,
-                                },
+                                color: colors.accent,
+                                styles: styles.textBold,
                             },
                             {
                                 text: 'Ваш товар прямо на главной',
-                                color: '#212429',
-                                styles: {
-                                    textAlign: 'left',
-                                    ...styles.textNormal,
-                                },
+                                color: colors.main,
+                                styles: styles.textNormal,
                             },
                             {
                                 text: 'странице в "рекомендациях"',
-                                color: '#212429',
-                                styles: {
-                                    textAlign: 'left',
-                                    ...styles.textNormal,
-                                },
+                                color: colors.main,
+                                styles: styles.textNormal,
                             },
                         ],
                     },
@@ -155,47 +153,35 @@ export default function Promo() {
                 txtArr: [
                     {
                         text: 'Количество мест: ',
-                        color: '#212429',
-                        styles: { ...styles.textNormal },
+                        color: colors.main,
+                        styles: styles.textNormal,
                     },
                     {
                         text: '3',
-                        color: colors.green,
-                        styles: { ...styles.textBold },
+                        color: colors.dynamic,
+                        styles: styles.textBold,
                     },
                     {
                         blockable: [
                             {
                                 text: 'Получите преимущество.',
-                                color: '#FFB400',
-                                styles: {
-                                    textAlign: 'left',
-                                    ...styles.textBold,
-                                },
+                                color: colors.accent,
+                                styles: styles.textBold,
                             },
                             {
                                 text: 'Ваш товар всегда на первых',
-                                color: '#212429',
-                                styles: {
-                                    textAlign: 'left',
-                                    ...styles.textNormal,
-                                },
+                                color: colors.main,
+                                styles: styles.textNormal,
                             },
                             {
                                 text: 'позициях в категории,',
-                                color: '#212429',
-                                styles: {
-                                    textAlign: 'left',
-                                    ...styles.textNormal,
-                                },
+                                color: colors.main,
+                                styles: styles.textNormal,
                             },
                             {
                                 text: 'которую вы выбрали.',
-                                color: '#212429',
-                                styles: {
-                                    textAlign: 'left',
-                                    ...styles.textNormal,
-                                },
+                                color: colors.main,
+                                styles: styles.textNormal,
                             },
                         ],
                     },
@@ -207,12 +193,8 @@ export default function Promo() {
                 txtArr: [
                     {
                         text: '12 : 43 : 27',
-                        color: '#3CBF32',
-                        styles: {
-                            fontSize: '30px',
-                            fontWeight: '800',
-                            lineHeight: '24px',
-                        },
+                        color: colors.dynamic,
+                        styles: styles.time,
                     },
                 ],
                 customCss: {
@@ -233,34 +215,22 @@ export default function Promo() {
                             {
                                 text: 'Увеличивайте свою прибыль.',
                                 color: colors.accent,
-                                styles: {
-                                    textAlign: 'left',
-                                    ...styles.textBold,
-                                },
+                                styles: styles.textBold,
                             },
                             {
                                 text: 'Отчет покажет вам статистику',
                                 color: colors.main,
-                                styles: {
-                                    textAlign: 'left',
-                                    ...styles.textNormal,
-                                },
+                                styles: styles.textNormal,
                             },
                             {
                                 text: 'ваших продаж, заработка.',
                                 color: colors.main,
-                                styles: {
-                                    textAlign: 'left',
-                                    ...styles.textNormal,
-                                },
+                                styles: styles.textNormal,
                             },
                             {
                                 text: 'клики на ваши товары',
                                 color: colors.main,
-                                styles: {
-                                    textAlign: 'left',
-                                    ...styles.textNormal,
-                                },
+                                styles: styles.textNormal,
                             },
                         ],
                     },
@@ -283,83 +253,74 @@ export default function Promo() {
                             {
                                 text: '1. Новый и яркий профиль',
                                 color: colors.accent,
-                                styles: {
-                                    textAlign: 'left',
-                                    ...styles.textBold,
-                                },
+                                styles: styles.textBold,
                             },
                             {
                                 text: 'удвоит ваш доход!',
                                 color: colors.accent,
-                                styles: {
-                                    textAlign: 'left',
-                                    ...styles.textBold,
-                                },
+                                styles: styles.textBold,
                             },
                             {
                                 text: '`',
                                 color: '#fff',
-                                styles: {
-                                    textAlign: 'left',
-                                    ...styles.textBold,
-                                },
+                                styles: styles.textBold,
                             },
                         ],
                     },
                     {
                         text: '2. ',
                         color: colors.accent,
-                        styles: { ...styles.textBold },
+                        styles: styles.textBold,
                     },
                     {
                         text: 'Получите ',
                         color: colors.main,
-                        styles: { ...styles.textNormal },
+                        styles: styles.textNormal,
                     },
                     {
                         text: 'новую карточку',
                         color: colors.accent,
-                        styles: { ...styles.textBold },
+                        styles: styles.textBold,
                     },
                     {
                         text: 'товара - ',
                         color: colors.accent,
-                        styles: { ...styles.textBold },
+                        styles: styles.textBold,
                     },
                     {
                         text: 'сделает ваши товары',
                         color: colors.main,
-                        styles: { ...styles.textNormal },
+                        styles: styles.textNormal,
                     },
                     {
                         text: 'еще заметнее!',
                         color: colors.accent,
-                        styles: { ...styles.textBold },
+                        styles: styles.textBold,
                     },
                     {
                         blockable: [
                             {
                                 text: '`',
                                 color: '#fff',
-                                styles: { ...styles.textBold },
+                                styles: styles.textBold,
                             },
                         ],
                     },
                     {
                         text: '3. скидка в 35% ',
                         color: colors.accent,
-                        styles: { ...styles.textBold },
+                        styles: styles.textBold,
                     },
                     {
                         text: 'на услуги',
                         color: colors.main,
-                        styles: { ...styles.textNormal },
+                        styles: styles.textNormal,
                     },
 
                     {
                         text: 'продвижения',
                         color: colors.main,
-                        styles: { ...styles.textNormal },
+                        styles: styles.textNormal,
                     },
                 ],
                 customCss: {
@@ -372,12 +333,8 @@ export default function Promo() {
                 txtArr: [
                     {
                         text: '27 дней',
-                        color: '#3CBF32',
-                        styles: {
-                            fontSize: '30px',
-                            fontWeight: '800',
-                            lineHeight: '24px',
-                        },
+                        color: colors.dynamic,
+                        styles: styles.time,
                     },
                 ],
                 customCss: {
