@@ -1,22 +1,24 @@
 :root {
-    /* colors */
+    /* text colors */
     --main-text-color: #212429;
     --accent-text-color: #ffb400;
+    --secondary-text-color: #fff;
     --dynamic-text-color: #3cbf32;
+
+    /* background colors */
     --main-background-color: #f8f8f8;
-    --figure-background-color: rgba(193, 222, 243, 0.16);
     --card-background-color: #fff;
-    --box-shadow-color: rgba(33, 36, 41, 0.16);
+    --button-background-color: #ffb400;
 
     /* font sizes */
-    --title-font-size: 36px;
-    --text-font-size: 18px;
-    --biggertext-font-size: 20px;
+    --title-font-size: 30px;
+    --text-font-size: 16px;
+    --biggertext-font-size: 18px;
     --smallertext-font-size: 14px;
+    --price-font-size: 50px;
 
-    /* fonts */
+    /* font weights */
     --title-font-weight: 900;
     --text-font-weight: 800;
-    --biggertext-font-weight: 800;
-    --smallertext-font-weight: 600;
+    --smaller-font-weight: 600;
 }

@@ -1,0 +1,6 @@
+.CustomTxt {
+    position: relative;
+    z-index: 3;
+    line-height: 24px;
+    padding-left: 31px;
+}
