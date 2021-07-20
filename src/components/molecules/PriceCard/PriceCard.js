@@ -1,6 +1,7 @@
 import React from 'react'
 import './PriceCard.css'
 import background from '../../../assets/pricecard-images/pc-background.svg'
+import backgroundbig from '../../../assets/pricecard-images/pc-background-big.svg'
 import header from '../../../assets/pricecard-images/pc-green-rectangle.svg'
 import sale from '../../../assets/pricecard-images/pc-sale.svg'
 import saleShadow from '../../../assets/pricecard-images/pc-sale-shadow.svg'
@@ -10,28 +11,25 @@ import crossline from '../../../assets/pricecard-images/cross-line.svg'
 import CustomTxt from '../../atoms/CustomTxt/CustomTxt'
 import PayButton from '../../atoms/PayButton/PayButton'
 
-function CardBackground() {
+function CardBackground({ saleUI, sizeBig }) {
     return (
         <>
             {/* Зеленый хэдер */}
             <img src={header} alt="" className="PriceCard__headerimg" />
             {/* Белый бэкграунд */}
-            <img src={background} alt="" className="PriceCard__backgroundimg" />
-        </>
-    )
-}
-
-export default function PriceCard({
-    price,
-    text,
-    arrow,
-    button,
-    timeLeft,
-    saleUI,
-}) {
-    return (
-        <div className="PriceCard">
-            <CardBackground />
+            {sizeBig ? (
+                <img
+                    src={backgroundbig}
+                    alt=""
+                    className="PriceCard__backgroundimg"
+                />
+            ) : (
+                <img
+                    src={background}
+                    alt=""
+                    className="PriceCard__backgroundimg"
+                />
+            )}
 
             {/* Скидка */}
             {saleUI && (
@@ -44,6 +42,22 @@ export default function PriceCard({
                     />
                 </>
             )}
+        </>
+    )
+}
+
+export default function PriceCard({
+    price,
+    text,
+    arrow,
+    button,
+    timeLeft,
+    saleUI,
+    sizeBig,
+}) {
+    return (
+        <div className="PriceCard">
+            <CardBackground saleUI={saleUI} sizeBig={sizeBig} />
 
             {/* Цена */}
             <div className="PriceCard__price">
@@ -64,19 +78,31 @@ export default function PriceCard({
                 </div>
             )}
 
-            {/* Текст */}
-            {text.map((t) => (
-                <CustomTxt txtArr={t.txtArr} customCss={t.customCss} />
-            ))}
-
-            {/* Стрелка */}
-            {arrow === 'top' ? (
-                <img src={topArrow} alt="" className="PriceCard__arrow" />
-            ) : arrow === 'bottom' ? (
-                <img src={bottomArrow} alt="" className="PriceCard__arrow" />
-            ) : (
-                <></>
-            )}
+            <div className="PriceCard__text">
+                {/* Текст */}
+                {text.map((t) => (
+                    <CustomTxt
+                        txtArr={t.txtArr}
+                        customCss={{
+                            width: '265px',
+                            marginBottom: '15px',
+                            ...t.customCss,
+                        }}
+                    />
+                ))}
+                {/* Стрелка */}
+                {arrow === 'top' ? (
+                    <img src={topArrow} alt="" className="PriceCard__arrow" />
+                ) : arrow === 'bottom' ? (
+                    <img
+                        src={bottomArrow}
+                        alt=""
+                        className="PriceCard__arrow"
+                    />
+                ) : (
+                    <></>
+                )}
+            </div>
 
             {/* Кнопка */}
             {button && <PayButton />}

@@ -14,6 +14,7 @@ export default function JointCard({ mainCard, priceCard }) {
                 timeLeft={priceCard.timeLeft}
                 arrow={priceCard.arrow}
                 saleUI={priceCard.sale}
+                sizeBig={priceCard.sizeBig}
             />
         </div>
     )

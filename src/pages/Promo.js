@@ -4,6 +4,7 @@ import maincard_1 from '../assets/maincard-images/mc-image-1.svg'
 import maincard_2 from '../assets/maincard-images/mc-image-2.svg'
 import maincard_3 from '../assets/maincard-images/mc-image-3.svg'
 import maincard_4 from '../assets/maincard-images/mc-image-4.svg'
+import { findAllByText } from '@testing-library/react'
 
 export default function Promo() {
     /* Переменные для цветов и стилей текста */
@@ -138,12 +139,15 @@ export default function Promo() {
                             ],
                         },
                     ],
-                    customCss: {},
+                    customCss: {
+                        height: '227px',
+                    },
                 },
             ],
             arrow: '',
             button: true,
             timeLeft: '',
+            sizeBig: false,
         },
         {
             price: {
@@ -207,6 +211,7 @@ export default function Promo() {
                 ],
                 customCss: {},
             },
+            sizeBig: false,
         },
         {
             price: {
@@ -242,11 +247,15 @@ export default function Promo() {
                             ],
                         },
                     ],
+                    customCss: {
+                        height: '227px',
+                    },
                 },
             ],
             arrow: 'bottom',
             button: true,
             timeLeft: '',
+            sizeBig: false,
         },
         {
             price: {
@@ -268,9 +277,6 @@ export default function Promo() {
                             styles: styles.textBold,
                         },
                     ],
-                    customCss: {
-                        width: '263px',
-                    },
                 },
                 {
                     txtArr: [
@@ -305,9 +311,6 @@ export default function Promo() {
                             styles: styles.textBold,
                         },
                     ],
-                    customCss: {
-                        width: '263px',
-                    },
                 },
                 {
                     txtArr: [
@@ -328,9 +331,6 @@ export default function Promo() {
                             styles: styles.textNormal,
                         },
                     ],
-                    customCss: {
-                        width: '263px',
-                    },
                 },
             ],
             arrow: 'top',
@@ -347,6 +347,7 @@ export default function Promo() {
                     marginTop: '0px',
                 },
             },
+            sizeBig: true,
         },
     ]
     return (

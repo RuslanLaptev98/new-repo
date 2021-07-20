@@ -67,7 +67,9 @@
     bottom: 98px;
     left: 44px;
 }
-
+.PriceCard__text {
+    margin-top: 148px;
+}
 .PriceCard .CustomTxt {
     position: relative;
     z-index: 3;
@@ -80,7 +82,6 @@
     margin: auto;
     z-index: 3;
 }
-
 .PriceCard__timeleft {
     position: absolute;
     z-index: 3;
