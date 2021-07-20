@@ -110,11 +110,13 @@ export default function Promo() {
     /* массив карточек с ценой */
     const priceCards = [
         {
+            sizeBig: false,
+            sale: true,
+            button: true,
             price: {
                 current: '109',
                 prev: '169',
             },
-            sale: true,
             text: [
                 {
                     txtArr: [
@@ -138,22 +140,18 @@ export default function Promo() {
                             ],
                         },
                     ],
-                    customCss: {
-                        marginTop: '219px',
-                    },
+                    customCss: { marginTop: '219px' },
                 },
             ],
-            arrow: '',
-            button: true,
-            timeLeft: '',
-            sizeBig: false,
         },
         {
+            sizeBig: false,
+            sale: true,
+            button: false,
             price: {
                 current: '78',
                 prev: '120',
             },
-            sale: true,
             text: [
                 {
                     txtArr: [
@@ -168,9 +166,7 @@ export default function Promo() {
                             styles: styles.textBold,
                         },
                     ],
-                    customCss: {
-                        marginTop: '180px',
-                    },
+                    customCss: { marginTop: '180px' },
                 },
                 {
                     txtArr: [
@@ -201,8 +197,6 @@ export default function Promo() {
                     ],
                 },
             ],
-            arrow: '',
-            button: false,
             timeLeft: {
                 txtArr: [
                     {
@@ -211,16 +205,13 @@ export default function Promo() {
                         styles: styles.time,
                     },
                 ],
-                customCss: {},
             },
-            sizeBig: false,
         },
         {
-            price: {
-                current: '90',
-                prev: '',
-            },
+            sizeBig: false,
             sale: false,
+            button: true,
+            price: { current: '90' },
             text: [
                 {
                     txtArr: [
@@ -249,22 +240,16 @@ export default function Promo() {
                             ],
                         },
                     ],
-                    customCss: {
-                        marginTop: '199px',
-                    },
+                    customCss: { marginTop: '199px' },
                 },
             ],
             arrow: 'bottom',
-            button: true,
-            timeLeft: '',
-            sizeBig: false,
         },
         {
-            price: {
-                current: '150',
-                prev: '',
-            },
+            sizeBig: true,
             sale: false,
+            button: false,
+            price: { current: '150' },
             text: [
                 {
                     txtArr: [
@@ -279,9 +264,7 @@ export default function Promo() {
                             styles: styles.textBold,
                         },
                     ],
-                    customCss: {
-                        marginTop: '191px',
-                    },
+                    customCss: { marginTop: '191px' },
                 },
                 {
                     txtArr: [
@@ -339,7 +322,6 @@ export default function Promo() {
                 },
             ],
             arrow: 'top',
-            button: false,
             timeLeft: {
                 txtArr: [
                     {
@@ -348,11 +330,8 @@ export default function Promo() {
                         styles: styles.time,
                     },
                 ],
-                customCss: {
-                    marginTop: '0px',
-                },
+                customCss: { marginTop: '0px' },
             },
-            sizeBig: true,
         },
     ]
 

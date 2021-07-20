@@ -8,13 +8,13 @@ export default function JointCard({ mainCard, priceCard }) {
         <div className="JointCard">
             <MainCard title={mainCard.title} image={mainCard.image} />
             <PriceCard
+                sizeBig={priceCard.sizeBig}
+                saleUI={priceCard.sale}
                 price={priceCard.price}
                 text={priceCard.text}
+                arrow={priceCard.arrow}
                 button={priceCard.button}
                 timeLeft={priceCard.timeLeft}
-                arrow={priceCard.arrow}
-                saleUI={priceCard.sale}
-                sizeBig={priceCard.sizeBig}
             />
         </div>
     )
