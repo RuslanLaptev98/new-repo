@@ -205,9 +205,7 @@ export default function Promo() {
                         styles: styles.time,
                     },
                 ],
-                customCss: {
-                    marginTop: '0px',
-                },
+                customCss: {},
             },
         },
         {

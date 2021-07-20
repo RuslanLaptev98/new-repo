@@ -10,6 +10,17 @@ import crossline from '../../../assets/pricecard-images/cross-line.svg'
 import CustomTxt from '../../atoms/CustomTxt/CustomTxt'
 import PayButton from '../../atoms/PayButton/PayButton'
 
+function CardBackground() {
+    return (
+        <>
+            {/* Зеленый хэдер */}
+            <img src={header} alt="" className="PriceCard__headerimg" />
+            {/* Белый бэкграунд */}
+            <img src={background} alt="" className="PriceCard__backgroundimg" />
+        </>
+    )
+}
+
 export default function PriceCard({
     price,
     text,
@@ -20,10 +31,8 @@ export default function PriceCard({
 }) {
     return (
         <div className="PriceCard">
-            {/* Зеленый хэдер */}
-            <img src={header} alt="" className="PriceCard__headerimg" />
-            {/* Белый бэкграунд */}
-            <img src={background} alt="" className="PriceCard__backgroundimg" />
+            <CardBackground />
+
             {/* Скидка */}
             {saleUI && (
                 <>
@@ -83,8 +92,24 @@ export default function PriceCard({
                         lineHeight: '24px',
                     }}
                 >
-                    Осталось
-                    <CustomTxt txtArr={timeLeft.txtArr} />
+                    <div
+                        style={{
+                            position: 'relative',
+                            left: '-50%',
+                        }}
+                    >
+                        Осталось
+                    </div>
+
+                    <CustomTxt
+                        txtArr={timeLeft.txtArr}
+                        customCss={{
+                            position: 'relative',
+                            left: '-50%',
+                            marginTop: '16px',
+                            paddingLeft: '0px',
+                        }}
+                    />
                 </div>
             )}
         </div>
