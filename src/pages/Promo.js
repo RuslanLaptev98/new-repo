@@ -4,7 +4,6 @@ import maincard_1 from '../assets/maincard-images/mc-image-1.svg'
 import maincard_2 from '../assets/maincard-images/mc-image-2.svg'
 import maincard_3 from '../assets/maincard-images/mc-image-3.svg'
 import maincard_4 from '../assets/maincard-images/mc-image-4.svg'
-import { findAllByText } from '@testing-library/react'
 
 export default function Promo() {
     /* Переменные для цветов и стилей текста */
@@ -140,7 +139,7 @@ export default function Promo() {
                         },
                     ],
                     customCss: {
-                        height: '227px',
+                        marginTop: '219px',
                     },
                 },
             ],
@@ -169,6 +168,9 @@ export default function Promo() {
                             styles: styles.textBold,
                         },
                     ],
+                    customCss: {
+                        marginTop: '180px',
+                    },
                 },
                 {
                     txtArr: [
@@ -248,7 +250,7 @@ export default function Promo() {
                         },
                     ],
                     customCss: {
-                        height: '227px',
+                        marginTop: '199px',
                     },
                 },
             ],
@@ -277,6 +279,9 @@ export default function Promo() {
                             styles: styles.textBold,
                         },
                     ],
+                    customCss: {
+                        marginTop: '191px',
+                    },
                 },
                 {
                     txtArr: [
@@ -350,6 +355,7 @@ export default function Promo() {
             sizeBig: true,
         },
     ]
+
     return (
         <div className="Promo">
             {mainCards.map((card, i) => (

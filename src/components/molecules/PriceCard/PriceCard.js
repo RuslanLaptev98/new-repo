@@ -55,8 +55,11 @@ export default function PriceCard({
     saleUI,
     sizeBig,
 }) {
+    const handleSize = () => {
+        return sizeBig ? { height: '654px' } : {}
+    }
     return (
-        <div className="PriceCard">
+        <div className="PriceCard" style={handleSize()}>
             <CardBackground saleUI={saleUI} sizeBig={sizeBig} />
 
             {/* Цена */}
