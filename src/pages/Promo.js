@@ -115,30 +115,32 @@ export default function Promo() {
                 prev: '169',
             },
             sale: true,
-            text: {
-                txtArr: [
-                    {
-                        blockable: [
-                            {
-                                text: 'Будьте всегда в топе.',
-                                color: colors.accent,
-                                styles: styles.textBold,
-                            },
-                            {
-                                text: 'Ваш товар прямо на главной',
-                                color: colors.main,
-                                styles: styles.textNormal,
-                            },
-                            {
-                                text: 'странице в "рекомендациях"',
-                                color: colors.main,
-                                styles: styles.textNormal,
-                            },
-                        ],
-                    },
-                ],
-                customCss: {},
-            },
+            text: [
+                {
+                    txtArr: [
+                        {
+                            blockable: [
+                                {
+                                    text: 'Будьте всегда в топе.',
+                                    color: colors.accent,
+                                    styles: styles.textBold,
+                                },
+                                {
+                                    text: 'Ваш товар прямо на главной',
+                                    color: colors.main,
+                                    styles: styles.textNormal,
+                                },
+                                {
+                                    text: 'странице в "рекомендациях"',
+                                    color: colors.main,
+                                    styles: styles.textNormal,
+                                },
+                            ],
+                        },
+                    ],
+                    customCss: {},
+                },
+            ],
             arrow: '',
             button: true,
             timeLeft: '',
@@ -149,44 +151,50 @@ export default function Promo() {
                 prev: '120',
             },
             sale: true,
-            text: {
-                txtArr: [
-                    {
-                        text: 'Количество мест: ',
-                        color: colors.main,
-                        styles: styles.textNormal,
-                    },
-                    {
-                        text: '3',
-                        color: colors.dynamic,
-                        styles: styles.textBold,
-                    },
-                    {
-                        blockable: [
-                            {
-                                text: 'Получите преимущество.',
-                                color: colors.accent,
-                                styles: styles.textBold,
-                            },
-                            {
-                                text: 'Ваш товар всегда на первых',
-                                color: colors.main,
-                                styles: styles.textNormal,
-                            },
-                            {
-                                text: 'позициях в категории,',
-                                color: colors.main,
-                                styles: styles.textNormal,
-                            },
-                            {
-                                text: 'которую вы выбрали.',
-                                color: colors.main,
-                                styles: styles.textNormal,
-                            },
-                        ],
-                    },
-                ],
-            },
+            text: [
+                {
+                    txtArr: [
+                        {
+                            text: 'Количество мест: ',
+                            color: colors.main,
+                            styles: styles.textNormal,
+                        },
+                        {
+                            text: '3',
+                            color: colors.dynamic,
+                            styles: styles.textBold,
+                        },
+                    ],
+                },
+                {
+                    txtArr: [
+                        {
+                            blockable: [
+                                {
+                                    text: 'Получите преимущество.',
+                                    color: colors.accent,
+                                    styles: styles.textBold,
+                                },
+                                {
+                                    text: 'Ваш товар всегда на первых',
+                                    color: colors.main,
+                                    styles: styles.textNormal,
+                                },
+                                {
+                                    text: 'позициях в категории,',
+                                    color: colors.main,
+                                    styles: styles.textNormal,
+                                },
+                                {
+                                    text: 'которую вы выбрали.',
+                                    color: colors.main,
+                                    styles: styles.textNormal,
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
             arrow: '',
             button: false,
             timeLeft: {
@@ -208,34 +216,36 @@ export default function Promo() {
                 prev: '',
             },
             sale: false,
-            text: {
-                txtArr: [
-                    {
-                        blockable: [
-                            {
-                                text: 'Увеличивайте свою прибыль.',
-                                color: colors.accent,
-                                styles: styles.textBold,
-                            },
-                            {
-                                text: 'Отчет покажет вам статистику',
-                                color: colors.main,
-                                styles: styles.textNormal,
-                            },
-                            {
-                                text: 'ваших продаж, заработка.',
-                                color: colors.main,
-                                styles: styles.textNormal,
-                            },
-                            {
-                                text: 'клики на ваши товары',
-                                color: colors.main,
-                                styles: styles.textNormal,
-                            },
-                        ],
-                    },
-                ],
-            },
+            text: [
+                {
+                    txtArr: [
+                        {
+                            blockable: [
+                                {
+                                    text: 'Увеличивайте свою прибыль.',
+                                    color: colors.accent,
+                                    styles: styles.textBold,
+                                },
+                                {
+                                    text: 'Отчет покажет вам статистику',
+                                    color: colors.main,
+                                    styles: styles.textNormal,
+                                },
+                                {
+                                    text: 'ваших продаж, заработка,',
+                                    color: colors.main,
+                                    styles: styles.textNormal,
+                                },
+                                {
+                                    text: 'клики на ваши товары',
+                                    color: colors.main,
+                                    styles: styles.textNormal,
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
             arrow: 'bottom',
             button: true,
             timeLeft: '',
@@ -246,87 +256,85 @@ export default function Promo() {
                 prev: '',
             },
             sale: false,
-            text: {
-                txtArr: [
-                    {
-                        blockable: [
-                            {
-                                text: '1. Новый и яркий профиль',
-                                color: colors.accent,
-                                styles: styles.textBold,
-                            },
-                            {
-                                text: 'удвоит ваш доход!',
-                                color: colors.accent,
-                                styles: styles.textBold,
-                            },
-                            {
-                                text: '`',
-                                color: '#fff',
-                                styles: styles.textBold,
-                            },
-                        ],
+            text: [
+                {
+                    txtArr: [
+                        {
+                            text: '1. Новый и яркий профиль',
+                            color: colors.accent,
+                            styles: styles.textBold,
+                        },
+                        {
+                            text: 'удвоит ваш доход!',
+                            color: colors.accent,
+                            styles: styles.textBold,
+                        },
+                    ],
+                    customCss: {
+                        width: '263px',
                     },
-                    {
-                        text: '2. ',
-                        color: colors.accent,
-                        styles: styles.textBold,
-                    },
-                    {
-                        text: 'Получите ',
-                        color: colors.main,
-                        styles: styles.textNormal,
-                    },
-                    {
-                        text: 'новую карточку',
-                        color: colors.accent,
-                        styles: styles.textBold,
-                    },
-                    {
-                        text: 'товара - ',
-                        color: colors.accent,
-                        styles: styles.textBold,
-                    },
-                    {
-                        text: 'сделает ваши товары',
-                        color: colors.main,
-                        styles: styles.textNormal,
-                    },
-                    {
-                        text: 'еще заметнее!',
-                        color: colors.accent,
-                        styles: styles.textBold,
-                    },
-                    {
-                        blockable: [
-                            {
-                                text: '`',
-                                color: '#fff',
-                                styles: styles.textBold,
-                            },
-                        ],
-                    },
-                    {
-                        text: '3. скидка в 35% ',
-                        color: colors.accent,
-                        styles: styles.textBold,
-                    },
-                    {
-                        text: 'на услуги',
-                        color: colors.main,
-                        styles: styles.textNormal,
-                    },
-
-                    {
-                        text: 'продвижения',
-                        color: colors.main,
-                        styles: styles.textNormal,
-                    },
-                ],
-                customCss: {
-                    width: '263px',
                 },
-            },
+                {
+                    txtArr: [
+                        {
+                            text: '2. ',
+                            color: colors.accent,
+                            styles: styles.textBold,
+                        },
+                        {
+                            text: 'Получите ',
+                            color: colors.main,
+                            styles: styles.textNormal,
+                        },
+                        {
+                            text: 'новую карточку',
+                            color: colors.accent,
+                            styles: styles.textBold,
+                        },
+                        {
+                            text: 'товара - ',
+                            color: colors.accent,
+                            styles: styles.textBold,
+                        },
+                        {
+                            text: 'сделает ваши товары',
+                            color: colors.main,
+                            styles: styles.textNormal,
+                        },
+                        {
+                            text: 'еще заметнее!',
+                            color: colors.accent,
+                            styles: styles.textBold,
+                        },
+                    ],
+                    customCss: {
+                        width: '263px',
+                    },
+                },
+                {
+                    txtArr: [
+                        {
+                            text: '3. скидка в 35% ',
+                            color: colors.accent,
+                            styles: styles.textBold,
+                        },
+                        {
+                            text: 'на услуги',
+                            color: colors.main,
+                            styles: styles.textNormal,
+                        },
+
+                        {
+                            text: 'продвижения',
+                            color: colors.main,
+                            styles: styles.textNormal,
+                        },
+                    ],
+                    customCss: {
+                        width: '263px',
+                    },
+                },
+            ],
             arrow: 'top',
             button: false,
             timeLeft: {

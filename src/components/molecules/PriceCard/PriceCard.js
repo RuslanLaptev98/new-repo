@@ -56,7 +56,9 @@ export default function PriceCard({
             )}
 
             {/* Текст */}
-            <CustomTxt txtArr={text.txtArr} customCss={text.customCss} />
+            {text.map((t) => (
+                <CustomTxt txtArr={t.txtArr} customCss={t.customCss} />
+            ))}
 
             {/* Стрелка */}
             {arrow === 'top' ? (
