@@ -8,11 +8,13 @@ export default function PriceCard({ card }) {
     return (
         <div className="PriceCard">
             <CardPrice price={card.price} discount={card.discount} />
-            <CardDescription
-                amount={card.amount}
-                description={card.description}
-            />
-            <CardButton />
+            <div className="PriceCard__content">
+                <CardDescription
+                    amount={card.amount}
+                    description={card.description}
+                />
+                <CardButton />
+            </div>
         </div>
     )
 }
