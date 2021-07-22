@@ -1,0 +1,6 @@
+.CardTitle {
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    color: var(--accent-text-color);
+    text-transform: uppercase;
+}

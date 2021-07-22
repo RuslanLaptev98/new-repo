@@ -1,0 +1,20 @@
+.CardPrice {
+    width: 337px;
+    height: 148px;
+}
+.CardPrice__current {
+    color: var(--secondary-text-color);
+    font-size: var(--bigger-font-size);
+    font-weight: var(--main-font-weight);
+}
+.CardPrice__currentValue {
+    font-size: var(--price-font-size);
+}
+.CardPrice__prev {
+    color: var(--main-text-color);
+    font-size: var(--smaller-font-size);
+    font-weight: var(--main-font-weight);
+}
+.CardPrice__prevValue {
+    font-size: var(--title-font-size);
+}
