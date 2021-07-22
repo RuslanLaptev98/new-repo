@@ -3,6 +3,7 @@ import './CardPrice.css'
 import cross from './cross.svg'
 import skidka from './skidka.svg'
 import skidkashadow from './skidka-shadow.svg'
+import cardheader from './card-header.svg'
 
 export default function CardPrice({ price, discount = 1 }) {
     return (

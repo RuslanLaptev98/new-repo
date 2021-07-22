@@ -1,4 +1,6 @@
 .JointCard {
     position: relative;
     padding-bottom: 87px;
+    width: 100%;
+    height: 577px;
 }

@@ -2,5 +2,8 @@ import React from 'react'
 import './CardImage.css'
 
 export default function CardImage({ image }) {
-    return <img className="CardImage" src={image} alt=""></img>
+    const img = {
+        backgroundImage: `url(${image})`,
+    }
+    return <div className="CardImage" style={img}></div>
 }
