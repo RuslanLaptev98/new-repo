@@ -7,6 +7,7 @@ import skidkashadow from './skidka-shadow.svg'
 export default function CardPrice({ price, discount = 1 }) {
     return (
         <div className="CardPrice">
+            {/* Скидка */}
             {discount !== 1 && (
                 <>
                     <img className="CardPrice__skidka" src={skidka} alt="" />
@@ -17,12 +18,14 @@ export default function CardPrice({ price, discount = 1 }) {
                     />
                 </>
             )}
+            {/* Цена */}
             <div className="CardPrice__current">
                 <span className="CardPrice__currentValue">
                     {Math.trunc(price * discount)}
                 </span>
                 ₽/день
             </div>
+            {/* Предыдущая цена */}
             {discount !== 1 && (
                 <div className="CardPrice__prev">
                     <span className="CardPrice__prevValue">{price}</span>₽/день
