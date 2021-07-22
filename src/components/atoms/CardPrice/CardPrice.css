@@ -1,11 +1,18 @@
 .CardPrice {
     width: 337px;
     height: 148px;
+    background-color: var(--price-background-color);
+    box-shadow: var(--price-box-shadow);
+    border-radius: 30px;
+    text-align: right;
+    margin-bottom: 45px;
 }
 .CardPrice__current {
     color: var(--secondary-text-color);
     font-size: var(--bigger-font-size);
     font-weight: var(--main-font-weight);
+    padding-top: 26px;
+    padding-right: 100px;
 }
 .CardPrice__currentValue {
     font-size: var(--price-font-size);
@@ -14,7 +21,25 @@
     color: var(--main-text-color);
     font-size: var(--smaller-font-size);
     font-weight: var(--main-font-weight);
+    padding-right: 28px;
+    margin-top: -4px;
 }
 .CardPrice__prevValue {
     font-size: var(--title-font-size);
+}
+.CardPrice__cross {
+    position: absolute;
+    top: 90px;
+    right: 17px;
+}
+.CardPrice__skidka {
+    position: absolute;
+    right: -20px;
+    top: -35px;
+}
+.CardPrice__skidkashadow {
+    position: absolute;
+    right: 71px;
+    top: -25px;
+    z-index: -1;
 }

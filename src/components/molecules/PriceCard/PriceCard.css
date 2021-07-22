@@ -1,0 +1,10 @@
+.PriceCard {
+    background-color: var(--card-background-color);
+    box-shadow: var(--card-box-shadow);
+    border-radius: 30px;
+    width: 337px;
+    min-height: 533px;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}

@@ -3,11 +3,11 @@ import './JointCard.css'
 import MainCard from '../../molecules/MainCard/MainCard'
 import PriceCard from '../../molecules/PriceCard/PriceCard'
 
-export default function JointCard() {
+export default function JointCard({ card }) {
     return (
         <div className="JointCard">
-            <MainCard />
-            <PriceCard />
+            <MainCard title={card.title} image={card.image} />
+            <PriceCard card={card} />
         </div>
     )
 }

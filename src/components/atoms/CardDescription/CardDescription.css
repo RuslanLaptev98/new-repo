@@ -1,6 +1,13 @@
 .CardDescription {
     color: var(--main-text-color);
     font-size: var(--main-font-size);
-    font-weight: var(--main-font-weight);
-    width: 265px;
+    font-weight: var(--smaller-font-weight);
+    width: 296px;
+}
+.CardDescription__paragraph {
+    padding-left: 31px;
+    padding-bottom: 15px;
+}
+.CardDescription__amount {
+    color: var(--dynamic-text-color);
 }

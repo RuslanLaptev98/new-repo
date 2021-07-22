@@ -1,0 +1,15 @@
+.MainCard {
+    width: 960px;
+    height: 477px;
+    background-color: var(--card-background-color);
+    box-shadow: var(--card-box-shadow);
+    border-radius: 30px;
+}
+.MainCard__title {
+    padding-top: 32px;
+    padding-left: 38px;
+}
+.MainCard__image {
+    padding-top: 32px;
+    padding-left: 40px;
+}
