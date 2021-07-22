@@ -3,7 +3,7 @@
     box-shadow: var(--card-box-shadow);
     border-radius: 30px;
     width: 337px;
-    min-height: 490px;
+    min-height: 400px;
     position: absolute;
     top: 63px;
     right: 0px;
@@ -14,4 +14,5 @@
     flex-direction: column;
     min-height: 340px;
     transform: matrix(1, -0.16, 0, 1, 0, 0);
+    margin-top: -20px;
 }
