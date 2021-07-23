@@ -1,0 +1,9 @@
+.Reviews {
+    width: 1110px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.Reviews__main {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,8 +1,13 @@
 import React from 'react'
 import './ProfileImage.css'
 
-export default function ProfileImage({ image }) {
+export default function ProfileImage({ image, mode }) {
     return (
-        <div className="ProfileImage" styles={{ backgroundImage: image }}></div>
+        <div
+            className={
+                mode === 1 ? 'ProfileImage' : 'ProfileImage ProfileImage-small'
+            }
+            styles={{ backgroundImage: image }}
+        ></div>
     )
 }

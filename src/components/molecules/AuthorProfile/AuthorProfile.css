@@ -1,0 +1,11 @@
+.AuthorProfile {
+    display: flex;
+}
+.AuthorProfile__main {
+    padding-left: 49px;
+}
+.AuthorProfile__stats {
+    display: flex;
+    width: 232px;
+    justify-content: space-between;
+}

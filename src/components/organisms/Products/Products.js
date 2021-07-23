@@ -6,10 +6,12 @@ import ProductCard from '../../molecules/ProductCard/ProductCard'
 export default function Products({ products }) {
     return (
         <div className="Products">
-            <SectionTitle />
-            {products.map((product) => (
-                <ProductCard product={product} />
-            ))}
+            <SectionTitle title="Товары" />
+            <dit className="Products__content">
+                {products.map((product) => (
+                    <ProductCard product={product} />
+                ))}
+            </dit>
         </div>
     )
 }

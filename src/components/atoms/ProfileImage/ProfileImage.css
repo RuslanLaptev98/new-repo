@@ -1,0 +1,13 @@
+.ProfileImage {
+    width: 140px;
+    height: 140px;
+    border: 2px solid #e1e1e1;
+    border-radius: 140px;
+    margin-left: 40px;
+}
+.ProfileImage-small {
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    margin-left: 0px;
+}

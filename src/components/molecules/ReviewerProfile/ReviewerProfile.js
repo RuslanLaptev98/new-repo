@@ -8,8 +8,10 @@ export default function ReviewerProfile({ review }) {
     return (
         <div className="ReviewerProfile">
             <ProfileImage image={review.image} />
-            <Name name={review.name} />
-            <Subtitle text={review.product} />
+            <div className="ReviewerProfile__info">
+                <Name name={review.name} />
+                <Subtitle text={review.product} />
+            </div>
         </div>
     )
 }

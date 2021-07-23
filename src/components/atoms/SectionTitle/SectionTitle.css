@@ -1,0 +1,16 @@
+.SectionTitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    color: #212429;
+    padding-bottom: 28px;
+    display: flex;
+}
+.SectionTitle__main {
+    flex-grow: 1;
+}
+.SectionTitle__more {
+    padding-right: 3px;
+    font-weight: 500;
+    font-size: 14px;
+}

@@ -1,0 +1,16 @@
+.Products {
+    width: 1110px;
+    margin: auto;
+    margin-bottom: 55px;
+}
+.Products__content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1110px;
+    height: 834px;
+    background-color: #fff;
+    box-shadow: 0px 8px 24px rgba(33, 36, 41, 0.1);
+    border-radius: 14px;
+    padding: 70px 70px;
+    justify-content: space-between;
+}

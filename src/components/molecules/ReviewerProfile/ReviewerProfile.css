@@ -1,0 +1,7 @@
+.ReviewerProfile {
+    display: flex;
+    align-items: center;
+}
+.ReviewerProfile__info {
+    padding-left: 20px;
+}

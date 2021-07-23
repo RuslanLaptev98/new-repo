@@ -7,8 +7,10 @@ import ReviewText from '../../atoms/ReviewText/ReviewText'
 export default function ReviewContent({ review }) {
     return (
         <div className="ReviewContent">
-            <TimeSince lastOnline={review.time} />
-            <Stars stars={review.stars} />
+            <div className="ReviewContent__info">
+                <TimeSince lastOnline={review.time} />
+                <Stars stars={review.stars} />
+            </div>
             <ReviewText text={review.text} />
         </div>
     )

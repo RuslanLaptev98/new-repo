@@ -6,7 +6,7 @@ import Review from '../../organisms/Review/Review'
 export default function Reviews({ reviews }) {
     return (
         <div className="Reviews">
-            <SectionTitle />
+            <SectionTitle title="Отзывы" />
             <div className="Reviews__main">
                 {reviews.map((review) => (
                     <Review review={review} />

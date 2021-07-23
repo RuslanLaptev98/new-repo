@@ -1,0 +1,12 @@
+.TimeSince {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 36px;
+    color: #212429;
+    opacity: 0.5;
+    width: 343px;
+    display: flex;
+}
+.TimeSince__item {
+    flex-grow: 1;
+}
