@@ -4,7 +4,7 @@ import CardPrice from '../../atoms/CardPrice/CardPrice'
 import CardDescription from '../../atoms/CardDescription/CardDescription'
 import CardButton from '../../atoms/CardButton/CardButton'
 
-export default function PriceCard({ card }) {
+export default function PriceCard({ card, setModalActive }) {
     return (
         <div className="PriceCard">
             <CardPrice price={card.price} discount={card.discount} />
@@ -13,7 +13,7 @@ export default function PriceCard({ card }) {
                     amount={card.amount}
                     description={card.description}
                 />
-                <CardButton />
+                <CardButton setModalActive={setModalActive} />
             </div>
         </div>
     )

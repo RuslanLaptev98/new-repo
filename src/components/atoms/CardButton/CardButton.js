@@ -1,6 +1,10 @@
 import React from 'react'
 import './CardButton.css'
 
-export default function CardButton() {
-    return <button className="CardButton">ОПЛАТИТЬ</button>
+export default function CardButton({ setModalActive }) {
+    return (
+        <button className="CardButton" onClick={() => setModalActive(true)}>
+            ОПЛАТИТЬ
+        </button>
+    )
 }
