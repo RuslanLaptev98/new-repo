@@ -8,7 +8,7 @@
 
     color: var(--secondary-text-color);
     font-weight: var(--main-font-weight);
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     line-height: 20px;
     letter-spacing: 0.04em;
 
@@ -16,4 +16,11 @@
     margin: auto;
     margin-bottom: 55px;
     margin-top: 40px;
+}
+
+.CardButton:hover {
+    opacity: 0.9;
+}
+.CardButton:active {
+    box-shadow: none;
 }
