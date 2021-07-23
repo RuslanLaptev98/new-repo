@@ -1,0 +1,10 @@
+.Info {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 36px;
+    padding-bottom: 3px;
+}
+.Info__value {
+    font-weight: 700;
+    color: rgba(60, 191, 50, 1);
+}

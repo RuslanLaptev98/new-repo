@@ -1,6 +1,10 @@
 import React from 'react'
 import './TimeSince.css'
 
-export default function TimeSince() {
-    return <div className="TimeSince"></div>
+export default function TimeSince({ lastOnline, registration }) {
+    return (
+        <div className="TimeSince">
+            {lastOnline} {registration}
+        </div>
+    )
 }

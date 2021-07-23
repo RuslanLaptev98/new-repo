@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap');
 @import url('variables.css');
 
 * {
@@ -6,6 +6,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    color: rgba(33, 36, 41, 1);
 }
 body {
     background-color: var(--body-background-color);
