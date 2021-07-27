@@ -1,0 +1,17 @@
+.PaymentCard {
+    height: 200px;
+    width: 320px;
+    border-radius: 14px;
+    background-color: #fff;
+    box-shadow: 0px 14px 40px rgba(33, 36, 41, 0.16);
+}
+.PaymentCard-active {
+    background: #3cbf32;
+    box-shadow: 0px 14px 40px rgba(60, 191, 50, 0.36);
+}
+.PaymentCard__text {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+}
