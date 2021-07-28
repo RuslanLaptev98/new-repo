@@ -1,0 +1,18 @@
+.Button {
+    padding: 20px 53px;
+    color: #fff;
+    background-color: #ffb400;
+    box-shadow: 0px 14px 40px rgba(255, 180, 0, 0.3);
+    width: 220px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 54px;
+    position: relative;
+    left: 880px;
+}
+.Button:hover {
+    opacity: 0.8;
+}
+.Button:active {
+    box-shadow: none;
+}
