@@ -1,0 +1,17 @@
+.CustomRadio {
+    display: flex;
+    margin-left: 80px;
+    padding-top: 33px;
+}
+.CustomRadio__text-active {
+    color: #3cbf32;
+}
+.CustomRadio__tick {
+    margin-right: 5px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background-position-x: -1px;
+    background-position-y: -1px;
+}

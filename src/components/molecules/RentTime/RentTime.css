@@ -1,0 +1,23 @@
+.Rent__hours input {
+    width: 94px;
+    height: 50px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #212429;
+}
+.Rent__hours input::placeholder {
+    color: #a2a3a5;
+}
+.Rent__hours {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

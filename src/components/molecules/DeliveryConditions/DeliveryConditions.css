@@ -1,0 +1,17 @@
+.DeliveryConditions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.DeliveryConditions__content {
+    margin-top: 80px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    width: 826px;
+    height: 419px;
+    background: #ffffff;
+    border-radius: 8px;
+}
+.DeliveryConditions__radio {
+    display: flex;
+}
