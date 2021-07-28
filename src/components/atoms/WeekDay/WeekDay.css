@@ -1,0 +1,16 @@
+.WeekDay {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+.WeekDay-selected {
+    border: none;
+    background: #3cbf32;
+    box-shadow: 0px 8px 26px rgba(60, 191, 50, 0.24);
+    color: #fff;
+}
