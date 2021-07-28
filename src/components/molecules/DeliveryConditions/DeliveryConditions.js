@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './DeliveryConditions.css'
 import SectionTitle from '../../atoms/SectionTitle/SectionTitle'
 import CustomRadio from '../../atoms/CustomRadio/CustomRadio'
+import CustomInput from '../../atoms/CustomInput/CustomInput'
 
 export default function DeliveryConditions() {
     const [radioActive, setRadioActive] = useState(0)
@@ -31,6 +32,12 @@ export default function DeliveryConditions() {
                         setActive={setRadioActive}
                         text="Собственная доставка"
                     />
+                </div>
+                <div className="DeliveryConditions__inputs">
+                    <CustomInput label="Адрес" />
+                    <CustomInput label="Ближайший ориентир" />
+                    <CustomInput label="Доставка" />
+                    <CustomInput label="Возврат" />
                 </div>
             </div>
         </div>

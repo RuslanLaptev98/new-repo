@@ -15,3 +15,6 @@
 .DeliveryConditions__radio {
     display: flex;
 }
+.DeliveryConditions__inputs {
+    margin-top: 36px;
+}

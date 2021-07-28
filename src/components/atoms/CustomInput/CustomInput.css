@@ -1,0 +1,19 @@
+.CustomInput {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    margin-right: 64px;
+}
+
+.CustomInput__input {
+    height: 50px;
+    width: 480px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.CustomInput label {
+    padding-right: 24px;
+}
