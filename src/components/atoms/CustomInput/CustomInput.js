@@ -1,18 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './CustomInput.css'
+import { InputText } from 'primereact/inputtext'
+import { Dropdown } from 'primereact/dropdown'
+import 'primeflex/primeflex.css'
 
 export default function CustomInput({ label, type }) {
+    const [value, setValue] = useState('')
+    const [option, setOption] = useState(null)
+    const options = [
+        { name: 'Через сервис', code: 'SR' },
+        { name: 'Самовывоз', code: 'SV' },
+        { name: 'Собственная доставка', code: 'SD' },
+    ]
+    const onOptionChange = (e) => {
+        setOption(e.value)
+    }
     return (
         <div className="CustomInput">
             <label>{label}</label>
             {type === 0 ? (
-                <input className="CustomInput__input" type="text" />
+                <InputText
+                    value={value}
+                    onChange={(e) => setValue(e.target.value)}
+                />
             ) : (
-                <select className="CustomInput__input" type="text">
-                    <option value="0">Через сервис</option>
-                    <option value="1">Самовывоз</option>
-                    <option value="2">Собственная доставка</option>
-                </select>
+                <Dropdown
+                    value={option}
+                    options={options}
+                    onChange={onOptionChange}
+                    optionLabel="name"
+                />
             )}
         </div>
     )

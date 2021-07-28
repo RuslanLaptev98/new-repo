@@ -5,7 +5,16 @@
     margin-bottom: 30px;
     margin-right: 64px;
 }
-
+.CustomInput input {
+    height: 50px;
+    width: 480px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding-left: 1rem;
+}
 .CustomInput__input {
     height: 50px;
     width: 480px;

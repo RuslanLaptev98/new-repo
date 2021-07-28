@@ -4,6 +4,7 @@ import Tabs from '../../components/molecules/Tabs/Tabs'
 import PaymentMethod from '../../components/organisms/PaymentMethod/PaymentMethod'
 import Rent from '../../components/organisms/Rent/Rent'
 import Notifications from '../../components/organisms/Notifications/Notifications'
+import Authentication from '../../components/organisms/Authentication/Authentication'
 
 export default function Settings() {
     const renderSwitch = (mode) => {
@@ -15,7 +16,7 @@ export default function Settings() {
             case 3:
                 return <Notifications />
             case 2:
-                return <></>
+                return <Authentication />
             case 1:
                 return <></>
             default:
