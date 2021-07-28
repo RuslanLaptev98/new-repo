@@ -3,6 +3,7 @@ import './Settings.css'
 import Tabs from '../../components/molecules/Tabs/Tabs'
 import PaymentMethod from '../../components/organisms/PaymentMethod/PaymentMethod'
 import Rent from '../../components/organisms/Rent/Rent'
+import Notifications from '../../components/organisms/Notifications/Notifications'
 
 export default function Settings() {
     const renderSwitch = (mode) => {
@@ -12,7 +13,7 @@ export default function Settings() {
             case 4:
                 return <Rent />
             case 3:
-                return <></>
+                return <Notifications />
             case 2:
                 return <></>
             case 1:
