@@ -13,6 +13,8 @@
     border: 1px solid #cccccc;
     box-sizing: border-box;
     border-radius: 4px;
+    font-size: 1rem;
+    padding-left: 1rem;
 }
 .CustomInput label {
     padding-right: 24px;

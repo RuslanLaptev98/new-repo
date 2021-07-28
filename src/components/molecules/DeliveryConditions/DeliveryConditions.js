@@ -34,8 +34,8 @@ export default function DeliveryConditions() {
                     />
                 </div>
                 <div className="DeliveryConditions__inputs">
-                    <CustomInput label="Адрес" />
-                    <CustomInput label="Ближайший ориентир" />
+                    <CustomInput label="Адрес" type={0} />
+                    <CustomInput label="Ближайший ориентир" type={0} />
                     <CustomInput label="Доставка" />
                     <CustomInput label="Возврат" />
                 </div>
