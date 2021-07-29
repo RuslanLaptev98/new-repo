@@ -31,13 +31,30 @@ export default function ContractData() {
                     />
                 </div>
                 <div className="ContractData__inputs">
-                    <CustomInput label="Фамилия" type={0} />
-                    <CustomInput label="Имя" type={0} />
-                    <CustomInput label="Отчество" type={0} />
-                    <CustomInput label="Моб. телефон" type={0} />
+                    <CustomInput
+                        label="Фамилия"
+                        type={0}
+                        styles={{ marginRight: 54 }}
+                    />
+                    <CustomInput
+                        label="Имя"
+                        type={0}
+                        styles={{ marginRight: 54 }}
+                    />
+                    <CustomInput
+                        label="Отчество"
+                        type={0}
+                        styles={{ marginRight: 54 }}
+                    />
+                    <CustomInput
+                        label="Моб. телефон"
+                        type={0}
+                        styles={{ marginRight: 54 }}
+                    />
                     <CustomInput
                         label="Логин для входа в личный кабинет www.poproshu.ru"
                         type={0}
+                        styles={{ marginRight: 54 }}
                     />
                     <div className="ContractData__passport">
                         <div className="ContractData__passporttext">
@@ -68,7 +85,10 @@ export default function ContractData() {
                                 <p className="ContractData__passportInputTitle">
                                     Номер
                                 </p>
-                                <CustomInput type={0} />
+                                <CustomInput
+                                    type={0}
+                                    styles={{ marginRight: 54 }}
+                                />
                             </div>
                         </div>
                     </div>
@@ -114,6 +134,7 @@ export default function ContractData() {
                             paddingTop: 16,
                             fontSize: 14,
                             textAlign: 'center',
+                            position: 'relative',
                             left: 550,
                             top: 30,
                         }}

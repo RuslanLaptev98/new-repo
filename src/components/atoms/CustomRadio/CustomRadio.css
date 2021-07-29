@@ -3,6 +3,11 @@
     margin-left: 80px;
     padding-top: 33px;
 }
+.CustomRadio__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
 .CustomRadio__text-active {
     color: #3cbf32;
 }

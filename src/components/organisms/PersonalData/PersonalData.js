@@ -11,7 +11,10 @@ export default function PersonalData() {
                 editableData={{ name: 'Адрес', data: 'Москва, Тверская 90' }}
             />
             <ContractData />
-            <Button text="сохранить" />
+            <Button
+                text="сохранить"
+                styles={{ position: 'relative', left: 840 }}
+            />
         </div>
     )
 }

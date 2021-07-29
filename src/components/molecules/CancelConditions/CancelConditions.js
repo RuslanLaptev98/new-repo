@@ -7,14 +7,17 @@ export default function CancelConditions() {
     const [cancelConditionsActive, setCancelConditionsActive] = useState(0)
     const conditions = [
         {
+            id: 0,
             title: 'гибкие',
             text: 'При отмене оплата полностью возвращается, удерживается только комиссионный сбор',
         },
         {
+            id: 1,
             title: 'умеренные',
             text: 'при отмене аренды удерживается комиссионный сбор и 20% от стоимости аренды в пользу арендодателя',
         },
         {
+            id: 2,
             title: 'строгие',
             text: 'при отмене аренды удерживается комиссионный сбор и 35% от стоимости аренды в пользу арендодателя',
         },
@@ -25,9 +28,8 @@ export default function CancelConditions() {
             <div className="Rent__cancel">
                 {conditions.map((condition, i) => (
                     <ConditionsCard
-                        condition={condition}
-                        id={i}
                         key={i}
+                        condition={condition}
                         active={cancelConditionsActive}
                         setActive={setCancelConditionsActive}
                     />

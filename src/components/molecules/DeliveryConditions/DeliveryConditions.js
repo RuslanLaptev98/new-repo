@@ -34,10 +34,26 @@ export default function DeliveryConditions() {
                     />
                 </div>
                 <div className="DeliveryConditions__inputs">
-                    <CustomInput label="Адрес" type={0} />
-                    <CustomInput label="Ближайший ориентир" type={0} />
-                    <CustomInput label="Доставка" />
-                    <CustomInput label="Возврат" />
+                    <CustomInput
+                        label="Адрес"
+                        type={0}
+                        styles={{ marginBottom: 30, marginRight: 64 }}
+                    />
+                    <CustomInput
+                        label="Ближайший ориентир"
+                        type={0}
+                        styles={{ marginBottom: 30, marginRight: 64 }}
+                    />
+                    <CustomInput
+                        label="Доставка"
+                        type={0}
+                        styles={{ marginBottom: 30, marginRight: 64 }}
+                    />
+                    <CustomInput
+                        type={0}
+                        label="Возврат"
+                        styles={{ marginBottom: 30, marginRight: 64 }}
+                    />
                 </div>
             </div>
         </div>

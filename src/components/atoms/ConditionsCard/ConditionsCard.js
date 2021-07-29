@@ -2,20 +2,20 @@ import React from 'react'
 import './ConditionsCard.css'
 import tick from './tick.svg'
 
-export default function ConditionsCard({ condition, id, active, setActive }) {
+export default function ConditionsCard({ condition, active, setActive }) {
     return (
         <div
             className={
-                active === id
+                active === condition.id
                     ? 'ConditionsCard ConditionsCard-active'
                     : 'ConditionsCard'
             }
-            onClick={() => setActive(id)}
+            onClick={() => setActive(condition.id)}
         >
             <div
                 className="ConditionsCard__tick"
                 style={
-                    active === id
+                    active === condition.id
                         ? {
                               backgroundImage: `url(${tick})`,
                           }

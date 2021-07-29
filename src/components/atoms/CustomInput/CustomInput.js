@@ -17,7 +17,13 @@ export default function CustomInput({ label, type, styles }) {
     }
     return (
         <div className="CustomInput" style={styles}>
-            <label style={{ maxWidth: '260px', textAlign: 'right' }}>
+            <label
+                style={{
+                    maxWidth: '260px',
+                    textAlign: 'right',
+                    fontWeight: 600,
+                }}
+            >
                 {label}
             </label>
             {type === 0 ? (

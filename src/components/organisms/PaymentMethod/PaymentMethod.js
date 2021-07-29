@@ -34,7 +34,10 @@ export default function PaymentMethod() {
                 ))}
             </div>
 
-            <Button text="сохранить" />
+            <Button
+                text="сохранить"
+                styles={{ position: 'relative', left: 880 }}
+            />
         </div>
     )
 }

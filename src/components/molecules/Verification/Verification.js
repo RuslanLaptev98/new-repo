@@ -3,10 +3,10 @@ import './Verification.css'
 import CustomInput from '../../atoms/CustomInput/CustomInput'
 import SquareButton from '../../atoms/SquareButton/SquareButton'
 
-export default function Verification({ text, buttonTxt }) {
+export default function Verification({ ver }) {
     return (
         <div className="Verification">
-            {text.map((t) => (
+            {ver.text.map((t) => (
                 <div className="Verification__text">{t}</div>
             ))}
 
@@ -16,10 +16,9 @@ export default function Verification({ text, buttonTxt }) {
                     styles={{
                         width: '330px',
                         height: '46px',
-                        margin: '0px',
                     }}
                 />
-                <SquareButton text={buttonTxt} />
+                <SquareButton text={ver.buttonTxt} />
             </div>
         </div>
     )
