@@ -13,4 +13,11 @@
     height: 46px;
     border-radius: 4px 0px 0px 4px;
     border-right: none;
+    width: 330px;
+    height: 46px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding-left: 1rem;
 }

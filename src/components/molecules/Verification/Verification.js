@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Verification.css'
-import CustomInput from '../../atoms/CustomInput/CustomInput'
 import SquareButton from '../../atoms/SquareButton/SquareButton'
+import { InputMask } from 'primereact/inputmask'
 
 export default function Verification({ ver }) {
+    const [verification, setVerification] = useState('')
     return (
         <div className="Verification">
             {ver.title.map((t) => (
@@ -11,14 +12,11 @@ export default function Verification({ ver }) {
             ))}
 
             <div className="Verification__content">
-                <CustomInput
-                    input={{
-                        type: 0,
-                        styles: {
-                            width: '330px',
-                            height: '46px',
-                        },
-                    }}
+                <InputMask
+                    mask={ver.inputMask.mask}
+                    value={verification}
+                    onChange={(e) => setVerification(e.value)}
+                    placeholder={ver.inputMask.placeholder}
                 />
                 <SquareButton text={ver.buttonTxt} />
             </div>
