@@ -4,4 +4,13 @@
     align-items: center;
     height: 66px;
     margin-bottom: 40px;
+    position: relative;
+}
+.Tabs::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100%;
+    top: 66px;
+    background-color: #e9e9e9;
 }

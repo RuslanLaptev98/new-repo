@@ -5,7 +5,21 @@
     text-transform: uppercase;
     max-width: 170px;
     text-align: center;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 .Tab-active {
     color: #3cbf32;
+}
+.Tab-active::after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 100%;
+    background-color: #3cbf32;
+    left: 0px;
+    top: 51px;
+    z-index: 1;
 }

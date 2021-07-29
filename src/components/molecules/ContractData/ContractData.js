@@ -60,21 +60,25 @@ export default function ContractData() {
                     ))}
                 </div>
                 {/* Белая форма инпутов */}
-                <div className="ContractData__inputs">
-                    {inputs.map((input, i) => (
-                        <CustomInput key={i} input={input} />
-                    ))}
-                    {/* Паспорт */}
-                    <div className="ContractData__passport">
-                        <PassportTitle />
-                        <PassportInput />
+                {radioActive === 0 ? (
+                    <div className="ContractData__inputs">
+                        {inputs.map((input, i) => (
+                            <CustomInput key={i} input={input} />
+                        ))}
+                        {/* Паспорт */}
+                        <div className="ContractData__passport">
+                            <PassportTitle />
+                            <PassportInput />
+                        </div>
+                        <FileDownload />
+                        <Button
+                            text="подтвердить паспорт"
+                            styles={customButtonStyles}
+                        />
                     </div>
-                    <FileDownload />
-                    <Button
-                        text="подтвердить паспорт"
-                        styles={customButtonStyles}
-                    />
-                </div>
+                ) : (
+                    <></>
+                )}
             </div>
         </div>
     )
