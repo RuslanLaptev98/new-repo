@@ -1,20 +1,21 @@
 import React, { useState } from 'react'
 import './CustomInput.css'
+import 'primeflex/primeflex.css'
 import { InputText } from 'primereact/inputtext'
 import { Dropdown } from 'primereact/dropdown'
-import 'primeflex/primeflex.css'
+import { InputMask } from 'primereact/inputmask'
 
-export default function CustomInput({ input }) {
+export default function CustomInput({ input, setEditableValue }) {
     const [value, setValue] = useState('')
-    const [option, setOption] = useState(null)
-    const options = [
-        { name: 'Через сервис', code: 'SR' },
-        { name: 'Самовывоз', code: 'SV' },
-        { name: 'Собственная доставка', code: 'SD' },
+
+    // Dropdown
+    const deliverySelectItems = [
+        { label: 'Самовывоз', value: 'Самовывоз' },
+        { label: 'Через сервис', value: 'Через сервис' },
+        { label: 'Собственная доставка', value: 'Собственная доставка' },
     ]
-    const onOptionChange = (e) => {
-        setOption(e.value)
-    }
+    const [delivery, setDelivery] = useState(deliverySelectItems[0].label)
+
     return (
         <div className="CustomInput" style={input.styles}>
             <label
@@ -31,15 +32,23 @@ export default function CustomInput({ input }) {
                     value={value}
                     onChange={(e) => {
                         setValue(e.target.value)
+                        setEditableValue(e.target.value)
                     }}
                 />
-            ) : (
+            ) : input.type === 1 ? (
                 <Dropdown
-                    value={option}
-                    options={options}
-                    onChange={onOptionChange}
-                    optionLabel="name"
+                    value={delivery}
+                    options={deliverySelectItems}
+                    onChange={(e) => setDelivery(e.value)}
+                    placeholder={delivery}
                 />
+            ) : (
+                <InputMask
+                    mask={input.mask}
+                    value={value}
+                    onChange={(e) => setValue(e.value)}
+                    placeholder={input.placeholder}
+                ></InputMask>
             )}
         </div>
     )

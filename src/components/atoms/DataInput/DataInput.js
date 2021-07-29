@@ -2,7 +2,12 @@ import React from 'react'
 import './DataInput.css'
 import CustomInput from '../CustomInput/CustomInput'
 
-export default function DataInput({ editable, setEditable, data }) {
+export default function DataInput({
+    editable,
+    setEditable,
+    data,
+    setEditableValue,
+}) {
     return (
         <div className="DataInput">
             {!editable ? (
@@ -14,7 +19,10 @@ export default function DataInput({ editable, setEditable, data }) {
                 </div>
             ) : (
                 <div className="DataInput-input">
-                    <CustomInput input={{ type: 0 }} />
+                    <CustomInput
+                        input={{ type: 0 }}
+                        setEditableValue={setEditableValue}
+                    />
                 </div>
             )}
         </div>

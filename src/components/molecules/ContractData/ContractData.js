@@ -19,7 +19,14 @@ export default function ContractData() {
         { id: 0, type: 0, styles: customCss, label: 'Фамилия' },
         { id: 1, type: 0, styles: customCss, label: 'Имя' },
         { id: 2, type: 0, styles: customCss, label: 'Отчество' },
-        { id: 3, type: 0, styles: customCss, label: 'Моб. телефон' },
+        {
+            id: 3,
+            type: 2,
+            styles: customCss,
+            label: 'Моб. телефон',
+            mask: '9 (999) 999-99-99',
+            placeholder: 'X (XXX) XXX-XX-XX',
+        },
         {
             id: 4,
             type: 0,
@@ -63,7 +70,11 @@ export default function ContractData() {
                 {radioActive === 0 ? (
                     <div className="ContractData__inputs">
                         {inputs.map((input, i) => (
-                            <CustomInput key={i} input={input} />
+                            <CustomInput
+                                key={i}
+                                input={input}
+                                setEditableValue={() => ''}
+                            />
                         ))}
                         {/* Паспорт */}
                         <div className="ContractData__passport">

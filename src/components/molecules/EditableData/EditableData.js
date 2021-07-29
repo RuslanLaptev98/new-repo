@@ -7,13 +7,15 @@ import './EditableData.css'
 export default function EditableData({ editableData, styles }) {
     // false - обычное состояние, true - редактируемое
     const [editable, setEditable] = useState(false)
+    const [editableValue, setEditableValue] = useState(editableData.value)
     return (
         <div className="EditableData" style={styles}>
             <DataName name={editableData.title} />
             <DataInput
                 editable={editable}
                 setEditable={setEditable}
-                data={editableData.value}
+                data={editableValue}
+                setEditableValue={setEditableValue}
             />
             <EditIcon editable={editable} setEditable={setEditable} />
         </div>

@@ -40,7 +40,11 @@ export default function DeliveryConditions() {
                 </div>
                 <div className="DeliveryConditions__inputs">
                     {inputs.map((input, i) => (
-                        <CustomInput key={i} input={input} />
+                        <CustomInput
+                            key={i}
+                            input={input}
+                            setEditableValue={() => ''}
+                        />
                     ))}
                 </div>
             </div>
