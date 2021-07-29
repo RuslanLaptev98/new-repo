@@ -4,11 +4,11 @@ import DataName from '../../atoms/DataName/DataName'
 import EditIcon from '../../atoms/EditIcon/EditIcon'
 import './EditableData.css'
 
-export default function EditableData({ editableData }) {
+export default function EditableData({ editableData, styles }) {
     // false - обычное состояние, true - редактируемое
     const [editable, setEditable] = useState(false)
     return (
-        <div className="EditableData">
+        <div className="EditableData" style={styles}>
             <DataName name={editableData.name} />
             <DataInput
                 editable={editable}

@@ -11,6 +11,10 @@
     right: 0px;
     top: -9px;
 }
+.Profile .EditIcon {
+    right: 40px;
+    top: 26px;
+}
 .EditIcon-save {
     background-color: #ffb400;
 }

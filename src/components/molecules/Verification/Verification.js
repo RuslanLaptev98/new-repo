@@ -12,10 +12,12 @@ export default function Verification({ ver }) {
 
             <div className="Verification__content">
                 <CustomInput
-                    type={0}
-                    styles={{
-                        width: '330px',
-                        height: '46px',
+                    input={{
+                        type: 0,
+                        styles: {
+                            width: '330px',
+                            height: '46px',
+                        },
                     }}
                 />
                 <SquareButton text={ver.buttonTxt} />

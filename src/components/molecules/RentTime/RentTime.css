@@ -1,4 +1,29 @@
-.Rent__hours input {
+.RentTime__time {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+.RentTime__days {
+    width: 635px;
+    height: 120px;
+    background: #ffffff;
+    box-shadow: 0px 8px 36px rgba(33, 36, 41, 0.1);
+    border-radius: 14px;
+    display: flex;
+    padding: 40px 69px;
+    justify-content: space-between;
+}
+.RentTime__hours {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 400px;
+    background: #ffffff;
+    box-shadow: 0px 8px 36px rgba(33, 36, 41, 0.1);
+    border-radius: 14px;
+}
+.RentTime__hours .p-inputtext {
     width: 94px;
     height: 50px;
     border: 1px solid #cccccc;
@@ -13,15 +38,7 @@
     line-height: 20px;
     color: #212429;
 }
-.Rent__hours input::placeholder {
-    color: #a2a3a5;
-}
-.Rent__hours {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.Rent__hours .p-inputtext::placeholder {
+.RentTime__hours .p-inputtext::placeholder {
     color: #a2a3a5;
     font-weight: 600;
     font-size: 16px;

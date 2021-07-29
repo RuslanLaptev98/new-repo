@@ -9,6 +9,23 @@ import camera from './camera.svg'
 
 export default function ContractData() {
     const [radioActive, setRadioActive] = useState(0)
+    const radios = [
+        { id: 0, text: 'Для физ. лиц' },
+        { id: 1, text: 'Для юр. лиц' },
+    ]
+    const customCss = { marginRight: 54 }
+    const inputs = [
+        { id: 0, type: 0, styles: customCss, label: 'Фамилия' },
+        { id: 1, type: 0, styles: customCss, label: 'Имя' },
+        { id: 2, type: 0, styles: customCss, label: 'Отчество' },
+        { id: 3, type: 0, styles: customCss, label: 'Моб. телефон' },
+        {
+            id: 4,
+            type: 0,
+            styles: customCss,
+            label: 'Логин для входа в личный кабинет www.poproshu.ru',
+        },
+    ]
     return (
         <div className="ContractData">
             <DataName
@@ -17,45 +34,19 @@ export default function ContractData() {
             />
             <div className="ContractData__data">
                 <div className="ContractData__radioGroup">
-                    <CustomRadio
-                        id={0}
-                        active={radioActive}
-                        setActive={setRadioActive}
-                        text="Для физ. лиц"
-                    />
-                    <CustomRadio
-                        id={1}
-                        active={radioActive}
-                        setActive={setRadioActive}
-                        text="Для юр. лиц"
-                    />
+                    {radios.map((radio, i) => (
+                        <CustomRadio
+                            key={i}
+                            radio={radio}
+                            active={radioActive}
+                            setActive={setRadioActive}
+                        />
+                    ))}
                 </div>
                 <div className="ContractData__inputs">
-                    <CustomInput
-                        label="Фамилия"
-                        type={0}
-                        styles={{ marginRight: 54 }}
-                    />
-                    <CustomInput
-                        label="Имя"
-                        type={0}
-                        styles={{ marginRight: 54 }}
-                    />
-                    <CustomInput
-                        label="Отчество"
-                        type={0}
-                        styles={{ marginRight: 54 }}
-                    />
-                    <CustomInput
-                        label="Моб. телефон"
-                        type={0}
-                        styles={{ marginRight: 54 }}
-                    />
-                    <CustomInput
-                        label="Логин для входа в личный кабинет www.poproshu.ru"
-                        type={0}
-                        styles={{ marginRight: 54 }}
-                    />
+                    {inputs.map((input, i) => (
+                        <CustomInput key={i} input={input} />
+                    ))}
                     <div className="ContractData__passport">
                         <div className="ContractData__passporttext">
                             <p className="ContractData__passportTitle">
@@ -79,15 +70,17 @@ export default function ContractData() {
                                 <p className="ContractData__passportInputTitle">
                                     Серия
                                 </p>
-                                <CustomInput type={0} />
+                                <CustomInput input={{ type: 0 }} />
                             </div>
                             <div>
                                 <p className="ContractData__passportInputTitle">
                                     Номер
                                 </p>
                                 <CustomInput
-                                    type={0}
-                                    styles={{ marginRight: 54 }}
+                                    input={{
+                                        type: 0,
+                                        styles: { marginRight: 54 },
+                                    }}
                                 />
                             </div>
                         </div>

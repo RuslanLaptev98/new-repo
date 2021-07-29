@@ -13,4 +13,8 @@
 }
 .PersonalData .DataInput-input {
     top: -15px;
+    margin-left: -50px;
+}
+.PersonalData .DataInput-data {
+    margin-left: -50px;
 }

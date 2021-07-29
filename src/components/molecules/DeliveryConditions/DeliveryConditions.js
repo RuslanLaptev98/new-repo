@@ -6,6 +6,21 @@ import CustomInput from '../../atoms/CustomInput/CustomInput'
 
 export default function DeliveryConditions() {
     const [radioActive, setRadioActive] = useState(0)
+    const radios = [
+        { id: 0, text: 'Самовывоз' },
+        { id: 1, text: 'Через сервис' },
+        { id: 2, text: 'Собственная доставка' },
+    ]
+    const inputStyles = {
+        marginBottom: 30,
+        marginRight: 64,
+    }
+    const inputs = [
+        { id: 0, type: 0, label: 'Адрес', styles: inputStyles },
+        { id: 1, type: 0, label: 'Ближайший ориентир', styles: inputStyles },
+        { id: 2, type: 0, label: 'Доставка', styles: inputStyles },
+        { id: 3, type: 0, label: 'Возврат', styles: inputStyles },
+    ]
     return (
         <div className="DeliveryConditions">
             <SectionTitle
@@ -14,46 +29,19 @@ export default function DeliveryConditions() {
             />
             <div className="DeliveryConditions__content">
                 <div className="DeliveryConditions__radio">
-                    <CustomRadio
-                        id={0}
-                        active={radioActive}
-                        setActive={setRadioActive}
-                        text="Самовывоз"
-                    />
-                    <CustomRadio
-                        id={1}
-                        active={radioActive}
-                        setActive={setRadioActive}
-                        text="Через сервис"
-                    />
-                    <CustomRadio
-                        id={2}
-                        active={radioActive}
-                        setActive={setRadioActive}
-                        text="Собственная доставка"
-                    />
+                    {radios.map((radio, i) => (
+                        <CustomRadio
+                            key={i}
+                            radio={radio}
+                            active={radioActive}
+                            setActive={setRadioActive}
+                        />
+                    ))}
                 </div>
                 <div className="DeliveryConditions__inputs">
-                    <CustomInput
-                        label="Адрес"
-                        type={0}
-                        styles={{ marginBottom: 30, marginRight: 64 }}
-                    />
-                    <CustomInput
-                        label="Ближайший ориентир"
-                        type={0}
-                        styles={{ marginBottom: 30, marginRight: 64 }}
-                    />
-                    <CustomInput
-                        label="Доставка"
-                        type={0}
-                        styles={{ marginBottom: 30, marginRight: 64 }}
-                    />
-                    <CustomInput
-                        type={0}
-                        label="Возврат"
-                        styles={{ marginBottom: 30, marginRight: 64 }}
-                    />
+                    {inputs.map((input, i) => (
+                        <CustomInput key={i} input={input} />
+                    ))}
                 </div>
             </div>
         </div>

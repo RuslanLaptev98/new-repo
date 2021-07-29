@@ -25,7 +25,7 @@ export default function CancelConditions() {
     return (
         <div className="CancelConditions">
             <SectionTitle title="условия отмены" />
-            <div className="Rent__cancel">
+            <div className="CancelConditions__cancel">
                 {conditions.map((condition, i) => (
                     <ConditionsCard
                         key={i}

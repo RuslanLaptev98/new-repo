@@ -11,7 +11,10 @@ export default function Rent() {
             <CancelConditions />
             <RentTime />
             <DeliveryConditions />
-            <Button text="сохранить" />
+            <Button
+                text="сохранить"
+                styles={{ position: 'absolute', right: 40 }}
+            />
         </div>
     )
 }

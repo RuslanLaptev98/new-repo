@@ -4,7 +4,7 @@ import { InputText } from 'primereact/inputtext'
 import { Dropdown } from 'primereact/dropdown'
 import 'primeflex/primeflex.css'
 
-export default function CustomInput({ label, type, styles }) {
+export default function CustomInput({ input }) {
     const [value, setValue] = useState('')
     const [option, setOption] = useState(null)
     const options = [
@@ -16,7 +16,7 @@ export default function CustomInput({ label, type, styles }) {
         setOption(e.value)
     }
     return (
-        <div className="CustomInput" style={styles}>
+        <div className="CustomInput" style={input.styles}>
             <label
                 style={{
                     maxWidth: '260px',
@@ -24,9 +24,9 @@ export default function CustomInput({ label, type, styles }) {
                     fontWeight: 600,
                 }}
             >
-                {label}
+                {input.label}
             </label>
-            {type === 0 ? (
+            {input.type === 0 ? (
                 <InputText
                     value={value}
                     onChange={(e) => setValue(e.target.value)}

@@ -15,13 +15,13 @@ export default function RentTime() {
                 title="дни и часы для аренды"
                 styles={{ paddingTop: '76px' }}
             />
-            <div className="Rent__time">
-                <div className="Rent__days">
+            <div className="RentTime__time">
+                <div className="RentTime__days">
                     {weekdays.map((day, i) => (
                         <WeekDay key={i} text={day} />
                     ))}
                 </div>
-                <div className="Rent__hours">
+                <div className="RentTime__hours">
                     с
                     <InputMask
                         mask="99 : 99"

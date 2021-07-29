@@ -8,9 +8,6 @@
     text-align: center;
     font-weight: 800;
     border-radius: 54px;
-    /*
-    position: relative;
-    left: 880px;*/
 }
 .Button:hover {
     opacity: 0.8;

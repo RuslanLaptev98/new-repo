@@ -8,32 +8,3 @@
     padding-top: 35px;
     position: relative;
 }
-.Rent__cancel {
-    display: flex;
-}
-.Rent .Button {
-    position: absolute;
-    right: 40px;
-}
-.Rent__time {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 40px;
-}
-.Rent__days {
-    width: 635px;
-    height: 120px;
-    background: #ffffff;
-    box-shadow: 0px 8px 36px rgba(33, 36, 41, 0.1);
-    border-radius: 14px;
-    display: flex;
-    padding: 40px 69px;
-    justify-content: space-between;
-}
-.Rent__hours {
-    height: 120px;
-    width: 400px;
-    background: #ffffff;
-    box-shadow: 0px 8px 36px rgba(33, 36, 41, 0.1);
-    border-radius: 14px;
-}
