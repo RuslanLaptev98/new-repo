@@ -1,0 +1,9 @@
+.PassportInput {
+    display: flex;
+}
+.PassportInput__title {
+    padding-left: 25px;
+    padding-bottom: 6px;
+    color: #a2a3a5;
+    font-weight: 400;
+}

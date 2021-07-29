@@ -20,3 +20,8 @@
     background-position-x: -1px;
     background-position-y: -1px;
 }
+.ContractData__radioGroup .CustomRadio {
+    padding: 0px;
+    margin: 0px;
+    padding-right: 73px;
+}
