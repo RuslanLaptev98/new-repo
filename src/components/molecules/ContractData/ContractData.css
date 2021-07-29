@@ -1,0 +1,54 @@
+.ContractData {
+    display: flex;
+    margin-top: 64px;
+}
+.ContractData .DataName {
+    padding-right: 50px;
+}
+.ContractData__radioGroup {
+    display: flex;
+}
+.ContractData__radioGroup .CustomRadio {
+    padding: 0px;
+    margin: 0px;
+    padding-right: 73px;
+}
+.ContractData__inputs {
+    width: 826px;
+    height: 796px;
+    background: #ffffff;
+    border-radius: 8px;
+    margin-top: 26px;
+    margin-bottom: 40px;
+    padding-top: 24px;
+}
+.ContractData__inputs .CustomInput {
+    margin-bottom: 30px;
+}
+.ContractData__passport {
+    display: flex;
+    justify-content: flex-end;
+}
+.ContractData__passportTitle {
+    font-weight: 600;
+    text-align: right;
+    padding-bottom: 14px;
+}
+.ContractData__passportSubtitle {
+    font-weight: 600;
+    font-size: 14px;
+    width: 230px;
+    padding-left: 24px;
+}
+.ContractData__passportInput {
+    display: flex;
+}
+.ContractData__passportInput .CustomInput {
+    width: 230px;
+}
+.ContractData__passportInputTitle {
+    padding-left: 25px;
+    padding-bottom: 6px;
+    color: #a2a3a5;
+    font-weight: 400;
+}
