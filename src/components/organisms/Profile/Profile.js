@@ -25,7 +25,10 @@ export default function Profile() {
                     data: 'password321',
                 }}
             />
-            <Button text="сохранить" />
+            <Button
+                text="сохранить"
+                styles={{ position: 'relative', left: 880 }}
+            />
         </div>
     )
 }

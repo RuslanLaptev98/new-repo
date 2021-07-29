@@ -6,3 +6,11 @@
     position: absolute;
     left: 284px;
 }
+.DataInput-input {
+    position: absolute;
+    left: 260px;
+    top: 20px;
+}
+.PersonalData .DataInput-input {
+    top: -15px;
+}
