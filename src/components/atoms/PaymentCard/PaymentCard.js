@@ -2,38 +2,41 @@ import React from 'react'
 import './PaymentCard.css'
 import tick from './tick.svg'
 
-export default function PaymentCard({
-    active,
-    setActive,
-    id,
-    text,
-    iconActive,
-    iconInactive,
-}) {
+export default function PaymentCard({ active, setActive, card }) {
     return (
         <div
             className={
-                active === id ? 'PaymentCard PaymentCard-active' : 'PaymentCard'
+                active === card.id
+                    ? 'PaymentCard PaymentCard-active'
+                    : 'PaymentCard'
             }
-            onClick={() => setActive(id)}
+            onClick={() => setActive(card.id)}
         >
             <div
                 className="PaymentCard__tick"
                 style={
-                    active === id
+                    active === card.id
                         ? {
                               backgroundImage: `url(${tick})`,
                           }
                         : {}
                 }
             ></div>
-            {active === id ? (
-                <img src={iconActive} alt="" className="PaymentCard__image" />
+            {active === card.id ? (
+                <img
+                    src={card.icons[0]}
+                    alt=""
+                    className="PaymentCard__image"
+                />
             ) : (
-                <img src={iconInactive} alt="" className="PaymentCard__image" />
+                <img
+                    src={card.icons[1]}
+                    alt=""
+                    className="PaymentCard__image"
+                />
             )}
 
-            {text.map((t) => (
+            {card.text.map((t) => (
                 <div className="PaymentCard__text">{t}</div>
             ))}
         </div>

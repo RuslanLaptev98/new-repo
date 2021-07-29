@@ -8,26 +8,30 @@ import iconAccountActive from './account-white.svg'
 import iconAccountInactive from './account.svg'
 
 export default function PaymentMethod() {
+    const paymentCards = [
+        {
+            id: 0,
+            text: ['Банковская карта', 'Комиссия 1.9% + 30₽'],
+            icons: [iconCardActive, iconCardInactive],
+        },
+        {
+            id: 1,
+            text: ['Лицевой счет', 'Комиссия 1%'],
+            icons: [iconAccountActive, iconAccountInactive],
+        },
+    ]
     const [active, setActive] = useState(0)
     return (
         <div className="PaymentMethod">
             <div className="PaymentMethod__cards">
-                <PaymentCard
-                    active={active}
-                    setActive={setActive}
-                    id={0}
-                    text={['Банковская карта', 'Комиссия 1.9% + 30₽']}
-                    iconActive={iconCardActive}
-                    iconInactive={iconCardInactive}
-                />
-                <PaymentCard
-                    active={active}
-                    setActive={setActive}
-                    id={1}
-                    text={['Лицевой счет', 'Комиссия 1%']}
-                    iconActive={iconAccountActive}
-                    iconInactive={iconAccountInactive}
-                />
+                {paymentCards.map((card, i) => (
+                    <PaymentCard
+                        key={i}
+                        active={active}
+                        setActive={setActive}
+                        card={card}
+                    />
+                ))}
             </div>
 
             <Button text="сохранить" />
