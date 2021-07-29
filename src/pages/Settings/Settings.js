@@ -5,6 +5,8 @@ import PaymentMethod from '../../components/organisms/PaymentMethod/PaymentMetho
 import Rent from '../../components/organisms/Rent/Rent'
 import Notifications from '../../components/organisms/Notifications/Notifications'
 import Authentication from '../../components/organisms/Authentication/Authentication'
+import PersonalData from '../../components/organisms/PersonalData/PersonalData'
+import Profile from '../../components/organisms/Profile/Profile'
 
 export default function Settings() {
     const renderSwitch = (mode) => {
@@ -18,9 +20,9 @@ export default function Settings() {
             case 2:
                 return <Authentication />
             case 1:
-                return <></>
+                return <PersonalData />
             default:
-                return <></>
+                return <Profile />
         }
     }
     const [mode, setMode] = useState(0)
