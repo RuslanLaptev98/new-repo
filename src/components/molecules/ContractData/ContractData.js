@@ -13,7 +13,7 @@ export default function ContractData() {
         <div className="ContractData">
             <DataName
                 name="данные для договора аренды"
-                styles={{ maxWidth: '185px' }}
+                styles={{ maxWidth: 190 }}
             />
             <div className="ContractData__data">
                 <div className="ContractData__radioGroup">

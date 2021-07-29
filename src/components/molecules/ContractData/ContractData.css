@@ -2,6 +2,9 @@
     display: flex;
     margin-top: 64px;
 }
+.ContractData__data {
+    margin-left: 40px;
+}
 .ContractData .DataName {
     padding-right: 50px;
 }
