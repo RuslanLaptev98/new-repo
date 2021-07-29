@@ -7,7 +7,9 @@ export default function EditIcon({ editable, setEditable }) {
     return (
         <div
             className={!editable ? 'EditIcon' : 'EditIcon EditIcon-save'}
-            onClick={() => setEditable(!editable)}
+            onClick={() => {
+                setEditable(!editable)
+            }}
         >
             {!editable ? (
                 <img src={edit} alt="edit" />

@@ -29,7 +29,9 @@ export default function CustomInput({ input }) {
             {input.type === 0 ? (
                 <InputText
                     value={value}
-                    onChange={(e) => setValue(e.target.value)}
+                    onChange={(e) => {
+                        setValue(e.target.value)
+                    }}
                 />
             ) : (
                 <Dropdown
