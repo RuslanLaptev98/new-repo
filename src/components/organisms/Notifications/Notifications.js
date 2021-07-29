@@ -7,24 +7,26 @@ export default function Notifications() {
     const notifications = [
         {
             title: 'Информационная рассылка',
-            subtitle: 'Полезные советы, акции и самые важные новости POPROSHU',
-            on: true,
+            description:
+                'Полезные советы, акции и самые важные новости POPROSHU',
+            active: true,
         },
         {
             title: 'telegram',
-            subtitle: 'Уведомления о новых сообщениях в беседах по аренде',
-            on: false,
+            description: 'Уведомления о новых сообщениях в беседах по аренде',
+            active: false,
         },
         {
             title: 'Email уведомления по статусу заявки',
-            subtitle: 'Изменения статуса бронирования и важные события аренды',
-            on: true,
+            description:
+                'Изменения статуса бронирования и важные события аренды',
+            active: true,
         },
         {
             title: 'SMS нотификация',
-            subtitle:
+            description:
                 'Самые важные события связанные с вашими заявками и профилем',
-            on: true,
+            active: true,
         },
     ]
     return (

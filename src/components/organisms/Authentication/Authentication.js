@@ -5,9 +5,9 @@ import Button from '../../atoms/Button/Button'
 
 export default function Authentication() {
     const verifications = [
-        { text: ['Введите номер телефона'], buttonTxt: 'получить код' },
+        { title: ['Введите номер телефона'], buttonTxt: 'получить код' },
         {
-            text: [
+            title: [
                 'На Ваш номер был выслан код.',
                 'Для подтверждения введите его в поле ниже',
             ],

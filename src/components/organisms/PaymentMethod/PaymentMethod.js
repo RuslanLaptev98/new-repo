@@ -11,12 +11,12 @@ export default function PaymentMethod() {
     const paymentCards = [
         {
             id: 0,
-            text: ['Банковская карта', 'Комиссия 1.9% + 30₽'],
+            description: ['Банковская карта', 'Комиссия 1.9% + 30₽'],
             icons: [iconCardActive, iconCardInactive],
         },
         {
             id: 1,
-            text: ['Лицевой счет', 'Комиссия 1%'],
+            description: ['Лицевой счет', 'Комиссия 1%'],
             icons: [iconAccountActive, iconAccountInactive],
         },
     ]

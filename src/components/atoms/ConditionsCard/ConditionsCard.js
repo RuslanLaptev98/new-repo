@@ -23,7 +23,7 @@ export default function ConditionsCard({ condition, active, setActive }) {
                 }
             ></div>
             <div className="ConditionsCard__title">{condition.title}</div>
-            <div className="ConditionsCard__text">{condition.text}</div>
+            <div className="ConditionsCard__text">{condition.description}</div>
         </div>
     )
 }

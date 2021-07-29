@@ -4,14 +4,14 @@ import './Notification.css'
 export default function Notification({ notification }) {
     const [toggle, setToggle] = useState(false)
     useEffect(() => {
-        setToggle(notification.on)
+        setToggle(notification.active)
     }, [])
     return (
         <div className="Notification">
             <div className="Notification__content">
                 <div className="Notification__title">{notification.title}</div>
                 <div className="Notification__subtitle">
-                    {notification.subtitle}
+                    {notification.description}
                 </div>
             </div>
             <div

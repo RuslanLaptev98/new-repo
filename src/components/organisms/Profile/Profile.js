@@ -6,12 +6,9 @@ import Button from '../../atoms/Button/Button'
 
 export default function Profile() {
     const dataset = [
-        { name: 'старый пароль', data: 'password123' },
-        { name: 'новый пароль', data: 'password321' },
-        {
-            name: 'подтвердите новый пароль',
-            data: 'password321',
-        },
+        { id: 0, title: 'старый пароль', value: 'password123' },
+        { id: 1, title: 'новый пароль', value: 'password321' },
+        { id: 2, title: 'подтвердите новый пароль', value: 'password321' },
     ]
     const customStyles = {
         paddingLeft: 40,
@@ -21,7 +18,7 @@ export default function Profile() {
     return (
         <div className="Profile">
             <EditableData
-                editableData={{ name: 'email', data: 'email@email.com' }}
+                editableData={{ title: 'email', value: 'email@email.com' }}
                 styles={customStyles}
             />
             <div className="Profile__password">

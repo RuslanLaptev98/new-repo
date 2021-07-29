@@ -36,8 +36,8 @@ export default function PaymentCard({ active, setActive, card }) {
                 />
             )}
 
-            {card.text.map((t) => (
-                <div className="PaymentCard__text">{t}</div>
+            {card.description.map((text) => (
+                <div className="PaymentCard__text">{text}</div>
             ))}
         </div>
     )

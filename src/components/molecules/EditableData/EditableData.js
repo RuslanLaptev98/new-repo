@@ -9,11 +9,11 @@ export default function EditableData({ editableData, styles }) {
     const [editable, setEditable] = useState(false)
     return (
         <div className="EditableData" style={styles}>
-            <DataName name={editableData.name} />
+            <DataName name={editableData.title} />
             <DataInput
                 editable={editable}
                 setEditable={setEditable}
-                data={editableData.data}
+                data={editableData.value}
             />
             <EditIcon editable={editable} setEditable={setEditable} />
         </div>

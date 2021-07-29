@@ -6,7 +6,7 @@ import SquareButton from '../../atoms/SquareButton/SquareButton'
 export default function Verification({ ver }) {
     return (
         <div className="Verification">
-            {ver.text.map((t) => (
+            {ver.title.map((t) => (
                 <div className="Verification__text">{t}</div>
             ))}
 

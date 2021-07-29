@@ -8,7 +8,7 @@ export default function PersonalData() {
     return (
         <div className="PersonalData">
             <EditableData
-                editableData={{ name: 'Адрес', data: 'Москва, Тверская 90' }}
+                editableData={{ title: 'Адрес', value: 'Москва, Тверская 90' }}
             />
             <ContractData />
             <Button

@@ -1,13 +1,13 @@
 import React from 'react'
 import './Tab.css'
 
-export default function Tab({ text, id, mode, setMode }) {
+export default function Tab({ tab, mode, setMode }) {
     return (
         <div
-            className={id === mode ? 'Tab Tab-active' : 'Tab'}
-            onClick={() => setMode(id)}
+            className={tab.id === mode ? 'Tab Tab-active' : 'Tab'}
+            onClick={() => setMode(tab.id)}
         >
-            {text}
+            {tab.title}
         </div>
     )
 }
