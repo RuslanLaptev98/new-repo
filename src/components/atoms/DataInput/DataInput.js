@@ -14,7 +14,7 @@ export default function DataInput({ editable, setEditable, data }) {
                 </div>
             ) : (
                 <div className="DataInput-input">
-                    <CustomInput type={0} />
+                    <CustomInput input={{ type: 0 }} />
                 </div>
             )}
         </div>

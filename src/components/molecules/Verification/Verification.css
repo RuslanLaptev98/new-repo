@@ -9,3 +9,8 @@
     display: flex;
     justify-content: center;
 }
+.Verification__content .p-inputtext {
+    height: 46px;
+    border-radius: 4px 0px 0px 4px;
+    border-right: none;
+}

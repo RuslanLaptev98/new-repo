@@ -22,14 +22,14 @@ export default function RentTime() {
                     ))}
                 </div>
                 <div className="RentTime__hours">
-                    с
+                    С
                     <InputMask
                         mask="99 : 99"
                         value={input1}
                         onChange={(e) => setInput1(e.value)}
                         placeholder="XX : XX"
                     ></InputMask>
-                    до
+                    ДО
                     <InputMask
                         mask="99 : 99"
                         value={input2}

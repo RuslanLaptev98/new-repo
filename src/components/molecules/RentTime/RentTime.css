@@ -1,3 +1,15 @@
+.RentTime {
+    position: relative;
+    font-weight: 600;
+}
+.RentTime::after {
+    content: '';
+    position: absolute;
+    width: 1050px;
+    height: 1px;
+    background-color: #e9e9e9;
+    bottom: -40px;
+}
 .RentTime__time {
     display: flex;
     justify-content: space-between;

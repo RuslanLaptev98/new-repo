@@ -24,13 +24,15 @@ export default function Profile() {
             <div className="Profile__password">
                 <DataName name="пароль" />
             </div>
-            {dataset.map((data, i) => (
-                <EditableData
-                    key={i}
-                    editableData={data}
-                    styles={customStyles}
-                />
-            ))}
+            <div className="Profile__changePassword">
+                {dataset.map((data, i) => (
+                    <EditableData
+                        key={i}
+                        editableData={data}
+                        styles={customStyles}
+                    />
+                ))}
+            </div>
 
             <Button
                 text="сохранить"
