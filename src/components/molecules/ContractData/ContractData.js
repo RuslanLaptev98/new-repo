@@ -4,6 +4,8 @@ import DataName from '../../atoms/DataName/DataName'
 import CustomRadio from '../../atoms/CustomRadio/CustomRadio'
 import CustomInput from '../../atoms/CustomInput/CustomInput'
 import shield from './shield.svg'
+import Button from '../../atoms/Button/Button'
+import camera from './camera.svg'
 
 export default function ContractData() {
     const [radioActive, setRadioActive] = useState(0)
@@ -70,6 +72,52 @@ export default function ContractData() {
                             </div>
                         </div>
                     </div>
+                    <div className="ContractData__photo">
+                        <p
+                            className="ContractData__passportSubtitle"
+                            style={{
+                                width: '100%',
+                                padding: 0,
+                                textAlign: 'center',
+                                paddingTop: 16,
+                            }}
+                        >
+                            Сделайте селфи с паспортом без бликов.
+                        </p>
+                        <p
+                            className="ContractData__passportSubtitle"
+                            style={{
+                                width: '100%',
+                                padding: 0,
+                                textAlign: 'center',
+                            }}
+                        >
+                            Отдельно фото первой страницы паспорта
+                        </p>
+                        <div className="ContractData__file">
+                            <div className="ContractData__camera">
+                                <img src={camera} alt="camera" />
+                            </div>
+                            <div className="ContractData__download">
+                                Загрузить файл
+                            </div>
+                        </div>
+                    </div>
+                    <Button
+                        text="подтвердить паспорт"
+                        styles={{
+                            background: '#3CBF32',
+                            boxShadow: '0px 14px 40px rgba(60, 191, 50, 0.3)',
+                            width: 230,
+                            height: 50,
+                            padding: 0,
+                            paddingTop: 16,
+                            fontSize: 14,
+                            textAlign: 'center',
+                            left: 550,
+                            top: 30,
+                        }}
+                    />
                 </div>
             </div>
         </div>

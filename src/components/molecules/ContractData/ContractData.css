@@ -52,3 +52,32 @@
     color: #a2a3a5;
     font-weight: 400;
 }
+.ContractData__photo {
+    width: 480px;
+    height: 136px;
+    border: 1px dashed #cccccc;
+    border-radius: 4px;
+    margin-left: 282px;
+}
+.ContractData__camera {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ContractData__download {
+    color: #3cbf32;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 23px;
+}
+.ContractData__file {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
