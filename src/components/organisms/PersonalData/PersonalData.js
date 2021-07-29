@@ -6,7 +6,9 @@ import EditableData from '../../molecules/EditableData/EditableData'
 export default function PersonalData() {
     return (
         <div className="PersonalData">
-            <EditableData />
+            <EditableData
+                editableData={{ name: 'Адрес', data: 'Москва, Тверская 90' }}
+            />
             <Button text="сохранить" />
         </div>
     )
