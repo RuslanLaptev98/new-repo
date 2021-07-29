@@ -1,0 +1,11 @@
+.Verification__text {
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 325px;
+}
+.Verification__content {
+    margin-top: 13px;
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: center;
+}

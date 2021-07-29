@@ -1,0 +1,18 @@
+.SquareButton {
+    width: 210px;
+    height: 46px;
+    background: #18c5ff;
+    border-radius: 0px 4px 4px 0px;
+    font-weight: 700;
+    line-height: 36px;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+.SquareButton:hover {
+    opacity: 0.9;
+}
+.SquareButton:active {
+    opacity: 0.8;
+}
