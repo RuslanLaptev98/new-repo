@@ -7,6 +7,7 @@ import Notifications from '../../components/organisms/Notifications/Notification
 import Authentication from '../../components/organisms/Authentication/Authentication'
 import PersonalData from '../../components/organisms/PersonalData/PersonalData'
 import Profile from '../../components/organisms/Profile/Profile'
+import ToMain from '../../components/atoms/ToMain/ToMain'
 
 export default function Settings() {
     const renderSwitch = (mode) => {
@@ -31,6 +32,7 @@ export default function Settings() {
             <div className="Settings__title">Настройки</div>
             <Tabs mode={mode} setMode={setMode} />
             {renderSwitch(mode)}
+            <ToMain />
         </div>
     )
 }

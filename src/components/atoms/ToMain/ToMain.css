@@ -1,0 +1,13 @@
+.ToMain {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 76px;
+}
+.ToMain__text {
+    color: #878e99;
+    padding-left: 5px;
+    padding-right: 6px;
+    padding-top: 2px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
