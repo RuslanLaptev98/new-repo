@@ -13,8 +13,8 @@ export default function Tabs({ mode, setMode }) {
     ]
     return (
         <div className="Tabs">
-            {tabs.map((tab, i) => (
-                <Tab tab={tab} mode={mode} setMode={setMode} key={i} />
+            {tabs.map((tab) => (
+                <Tab tab={tab} mode={mode} setMode={setMode} key={tab.id} />
             ))}
         </div>
     )

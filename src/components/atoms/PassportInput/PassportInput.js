@@ -7,7 +7,7 @@ export default function PassportInput() {
     const [nomer, setNomer] = useState('')
     return (
         <div className="PassportInput">
-            <div style={{ width: '275px' }}>
+            <div>
                 <p className="PassportInput__title">Серия</p>
                 <InputMask
                     mask="9 9 9 9"

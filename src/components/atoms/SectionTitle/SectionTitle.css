@@ -5,3 +5,10 @@
     text-transform: uppercase;
     padding-bottom: 36px;
 }
+.SectionTitle-delivery {
+    padding-top: 76px;
+    max-width: 190px;
+}
+.SectionTitle-rent {
+    padding-top: 76px;
+}

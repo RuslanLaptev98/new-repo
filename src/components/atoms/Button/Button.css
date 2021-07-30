@@ -15,3 +15,16 @@
 .Button:active {
     box-shadow: none;
 }
+.Button-contract {
+    background: #3cbf32;
+    box-shadow: 0px 14px 40px rgba(60, 191, 50, 0.3);
+    width: 230px;
+    height: 50px;
+    padding: 0px;
+    padding-top: 16px;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    left: 550px;
+    top: 30px;
+}

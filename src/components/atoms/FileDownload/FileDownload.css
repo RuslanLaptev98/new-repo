@@ -3,7 +3,8 @@
     height: 136px;
     border: 1px dashed #cccccc;
     border-radius: 4px;
-    margin-left: 292px;
+    margin-left: 306px;
+    padding-top: 16px;
 }
 .FileDownload__file {
     display: flex;
@@ -28,4 +29,9 @@
     margin-left: 23px;
     padding-bottom: 7px;
     border-bottom: 1px dashed #3cbf32;
+}
+.FileDownload-description {
+    width: 100%;
+    padding: 0;
+    text-align: center;
 }

@@ -9,6 +9,7 @@ export default function PersonalData() {
         <div className="PersonalData">
             <EditableData
                 editableData={{ title: 'Адрес', value: 'Москва, Тверская 90' }}
+                className="EditableData-personal"
             />
             <ContractData />
             <Button

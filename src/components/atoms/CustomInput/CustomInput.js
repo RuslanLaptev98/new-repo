@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 import './CustomInput.css'
-import 'primeflex/primeflex.css'
 import { InputText } from 'primereact/inputtext'
 import { Dropdown } from 'primereact/dropdown'
 import { InputMask } from 'primereact/inputmask'
-import arrow from './arrow-down.svg'
 
-export default function CustomInput({ input, setEditableValue }) {
+export default function CustomInput({ input, setEditableValue, className }) {
     const [value, setValue] = useState('')
     const [option, setOption] = useState('Через сервис')
     const customSelectItems = [
@@ -16,16 +14,8 @@ export default function CustomInput({ input, setEditableValue }) {
     ]
 
     return (
-        <div className="CustomInput" style={input.styles}>
-            <label
-                style={{
-                    maxWidth: '260px',
-                    textAlign: 'right',
-                    fontWeight: 600,
-                }}
-            >
-                {input.label}
-            </label>
+        <div className={`CustomInput ${className}`}>
+            <label className="CustomInput__label">{input.label}</label>
             {input.type === 0 ? (
                 <InputText
                     value={value}
@@ -35,21 +25,18 @@ export default function CustomInput({ input, setEditableValue }) {
                     }}
                 />
             ) : input.type === 1 ? (
-                <div style={{ position: 'relative' }}>
-                    <Dropdown
-                        value={option}
-                        options={customSelectItems}
-                        onChange={(e) => setOption(e.value)}
-                        placeholder={option}
-                    />
-                    <img src={arrow} alt="" className="CustomInput__arrow" />
-                </div>
+                <Dropdown
+                    value={option}
+                    options={customSelectItems}
+                    onChange={(e) => setOption(e.value)}
+                    placeholder={option}
+                />
             ) : (
                 <InputMask
-                    mask={input.mask}
+                    mask="9 (999) 999-99-99"
                     value={value}
                     onChange={(e) => setValue(e.value)}
-                    placeholder={input.placeholder}
+                    placeholder="X (XXX) XXX-XX-XX"
                 ></InputMask>
             )}
         </div>

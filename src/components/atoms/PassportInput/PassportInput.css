@@ -2,13 +2,13 @@
     display: flex;
 }
 .PassportInput__title {
-    padding-left: 25px;
+    padding-left: 24px;
     padding-bottom: 6px;
     color: #a2a3a5;
     font-weight: 400;
 }
 .PassportInput .p-inputtext {
-    width: 204px;
+    width: 227.5px;
     height: 50px;
     background: #ffffff;
     border: 1px solid #cccccc;
@@ -17,5 +17,4 @@
     font-size: 1rem;
     margin-left: 24px;
     text-align: center;
-    margin-right: 55px;
 }

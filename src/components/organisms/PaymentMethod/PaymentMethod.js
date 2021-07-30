@@ -25,9 +25,9 @@ export default function PaymentMethod() {
     return (
         <div className="PaymentMethod">
             <div className="PaymentMethod__cards">
-                {paymentCards.map((card, i) => (
+                {paymentCards.map((card) => (
                     <PaymentCard
-                        key={i}
+                        key={card.id}
                         active={active}
                         setActive={setActive}
                         card={card}

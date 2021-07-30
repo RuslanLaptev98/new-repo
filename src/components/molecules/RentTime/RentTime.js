@@ -13,7 +13,7 @@ export default function RentTime() {
         <div className="RentTime">
             <SectionTitle
                 title="дни и часы для аренды"
-                styles={{ paddingTop: '76px' }}
+                className="SectionTitle-rent"
             />
             <div className="RentTime__time">
                 <div className="RentTime__days">

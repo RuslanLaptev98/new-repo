@@ -2,7 +2,12 @@
     display: flex;
     position: relative;
 }
-.PersonalData .EditableData::after {
+.EditableData-profile {
+    padding-left: 40px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.EditableData-personal::after {
     position: absolute;
     content: '';
     height: 1px;

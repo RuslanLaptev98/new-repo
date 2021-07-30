@@ -6,23 +6,27 @@ import './Notifications.css'
 export default function Notifications() {
     const notifications = [
         {
+            id: 0,
             title: 'Информационная рассылка',
             description:
                 'Полезные советы, акции и самые важные новости POPROSHU',
             active: true,
         },
         {
+            id: 1,
             title: 'telegram',
             description: 'Уведомления о новых сообщениях в беседах по аренде',
             active: false,
         },
         {
+            id: 2,
             title: 'Email уведомления по статусу заявки',
             description:
                 'Изменения статуса бронирования и важные события аренды',
             active: true,
         },
         {
+            id: 3,
             title: 'SMS нотификация',
             description:
                 'Самые важные события связанные с вашими заявками и профилем',
@@ -31,8 +35,11 @@ export default function Notifications() {
     ]
     return (
         <div className="Notifications">
-            {notifications.map((notification, i) => (
-                <Notification notification={notification} key={i} />
+            {notifications.map((notification) => (
+                <Notification
+                    notification={notification}
+                    key={notification.id}
+                />
             ))}
 
             <Button

@@ -6,26 +6,23 @@ import Button from '../../atoms/Button/Button'
 export default function Authentication() {
     const verifications = [
         {
+            id: 0,
             title: ['Введите номер телефона'],
             buttonTxt: 'получить код',
-            inputMask: {
-                placeholder: 'X (XXX) XXX-XX-XX',
-                mask: '9 (999) 999 - 99 - 99',
-            },
         },
         {
+            id: 1,
             title: [
                 'На Ваш номер был выслан код.',
                 'Для подтверждения введите его в поле ниже',
             ],
             buttonTxt: 'подтвердить',
-            inputMask: { placeholder: 'X X X X X X', mask: '9 9 9 9 9 9' },
         },
     ]
     return (
         <div className="Authentication">
-            {verifications.map((ver, i) => (
-                <Verification key={i} ver={ver} />
+            {verifications.map((ver) => (
+                <Verification key={ver.id} ver={ver} maskType={ver.id} />
             ))}
             <Button
                 text="сохранить"

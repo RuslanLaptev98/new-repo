@@ -11,28 +11,24 @@ export default function DeliveryConditions() {
         { id: 1, text: 'Через сервис' },
         { id: 2, text: 'Собственная доставка' },
     ]
-    const inputStyles = {
-        marginBottom: 30,
-        marginRight: 64,
-    }
     const inputs = [
-        { id: 0, type: 0, label: 'Адрес', styles: inputStyles },
-        { id: 1, type: 0, label: 'Ближайший ориентир', styles: inputStyles },
-        { id: 2, type: 1, label: 'Доставка', styles: inputStyles },
-        { id: 3, type: 1, label: 'Возврат', styles: inputStyles },
+        { id: 0, type: 0, label: 'Адрес' },
+        { id: 1, type: 0, label: 'Ближайший ориентир' },
+        { id: 2, type: 1, label: 'Доставка' },
+        { id: 3, type: 1, label: 'Возврат' },
     ]
 
     return (
         <div className="DeliveryConditions">
             <SectionTitle
                 title="условия доставки и возврата товара"
-                styles={{ paddingTop: '76px', maxWidth: '190px' }}
+                className="SectionTitle-delivery"
             />
             <div className="DeliveryConditions__content">
                 <div className="DeliveryConditions__radio">
-                    {radios.map((radio, i) => (
+                    {radios.map((radio) => (
                         <CustomRadio
-                            key={i}
+                            key={radio.id}
                             radio={radio}
                             active={radioActive}
                             setActive={setRadioActive}
@@ -40,11 +36,12 @@ export default function DeliveryConditions() {
                     ))}
                 </div>
                 <div className="DeliveryConditions__inputs">
-                    {inputs.map((input, i) => (
+                    {inputs.map((input) => (
                         <CustomInput
-                            key={i}
+                            key={input.id}
                             input={input}
                             setEditableValue={() => ''}
+                            className="CustomInput-delivery"
                         />
                     ))}
                 </div>

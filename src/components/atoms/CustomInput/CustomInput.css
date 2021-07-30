@@ -13,19 +13,22 @@
     font-size: 1rem;
     padding-left: 1rem;
 }
-.CustomInput label {
+.CustomInput-delivery {
+    margin-bottom: 30px;
+    margin-right: 64px;
+}
+.CustomInput__label {
+    max-width: 260px;
+    text-align: right;
+    font-weight: 600;
     padding-right: 24px;
 }
-
 .ContractData__inputs .CustomInput {
     margin-bottom: 30px;
 }
 
 .PassportInput .CustomInput {
     width: 230px;
-}
-.p-hidden-accessible {
-    display: none;
 }
 .CustomInput .p-dropdown {
     height: 50px;
@@ -49,21 +52,5 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-}
-.p-dropdown-panel {
-    display: block;
-    position: absolute;
-    top: -1000px;
-}
-.p-dropdown-items {
-    list-style: none;
-}
-.p-dropdown-item {
-    height: 50px;
-    width: 480px;
-}
-.CustomInput__arrow {
-    position: absolute;
-    top: 13px;
-    left: 420px;
+    border-right: none;
 }
