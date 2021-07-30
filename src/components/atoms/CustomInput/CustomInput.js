@@ -4,17 +4,16 @@ import 'primeflex/primeflex.css'
 import { InputText } from 'primereact/inputtext'
 import { Dropdown } from 'primereact/dropdown'
 import { InputMask } from 'primereact/inputmask'
+import arrow from './arrow-down.svg'
 
 export default function CustomInput({ input, setEditableValue }) {
     const [value, setValue] = useState('')
-
-    // Dropdown
-    const deliverySelectItems = [
+    const [option, setOption] = useState('Через сервис')
+    const customSelectItems = [
         { label: 'Самовывоз', value: 'Самовывоз' },
         { label: 'Через сервис', value: 'Через сервис' },
         { label: 'Собственная доставка', value: 'Собственная доставка' },
     ]
-    const [delivery, setDelivery] = useState(deliverySelectItems[0].label)
 
     return (
         <div className="CustomInput" style={input.styles}>
@@ -36,12 +35,15 @@ export default function CustomInput({ input, setEditableValue }) {
                     }}
                 />
             ) : input.type === 1 ? (
-                <Dropdown
-                    value={delivery}
-                    options={deliverySelectItems}
-                    onChange={(e) => setDelivery(e.value)}
-                    placeholder={delivery}
-                />
+                <div style={{ position: 'relative' }}>
+                    <Dropdown
+                        value={option}
+                        options={customSelectItems}
+                        onChange={(e) => setOption(e.value)}
+                        placeholder={option}
+                    />
+                    <img src={arrow} alt="" className="CustomInput__arrow" />
+                </div>
             ) : (
                 <InputMask
                     mask={input.mask}

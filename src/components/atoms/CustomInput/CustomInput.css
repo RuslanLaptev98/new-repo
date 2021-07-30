@@ -24,3 +24,46 @@
 .PassportInput .CustomInput {
     width: 230px;
 }
+.p-hidden-accessible {
+    display: none;
+}
+.CustomInput .p-dropdown {
+    height: 50px;
+    width: 480px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding-left: 20px;
+}
+.p-dropdown-label.p-inputtext {
+    display: block;
+    padding-top: 14px;
+    position: relative;
+    top: -1px;
+    left: -21px;
+    font-weight: 600;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+.p-dropdown-panel {
+    display: block;
+    position: absolute;
+    top: -1000px;
+}
+.p-dropdown-items {
+    list-style: none;
+}
+.p-dropdown-item {
+    height: 50px;
+    width: 480px;
+}
+.CustomInput__arrow {
+    position: absolute;
+    top: 13px;
+    left: 420px;
+}

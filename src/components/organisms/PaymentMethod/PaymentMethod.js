@@ -21,6 +21,7 @@ export default function PaymentMethod() {
         },
     ]
     const [active, setActive] = useState(0)
+
     return (
         <div className="PaymentMethod">
             <div className="PaymentMethod__cards">

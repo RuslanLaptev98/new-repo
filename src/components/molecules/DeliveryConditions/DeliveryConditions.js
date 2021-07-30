@@ -18,9 +18,10 @@ export default function DeliveryConditions() {
     const inputs = [
         { id: 0, type: 0, label: 'Адрес', styles: inputStyles },
         { id: 1, type: 0, label: 'Ближайший ориентир', styles: inputStyles },
-        { id: 2, type: 0, label: 'Доставка', styles: inputStyles },
-        { id: 3, type: 0, label: 'Возврат', styles: inputStyles },
+        { id: 2, type: 1, label: 'Доставка', styles: inputStyles },
+        { id: 3, type: 1, label: 'Возврат', styles: inputStyles },
     ]
+
     return (
         <div className="DeliveryConditions">
             <SectionTitle
