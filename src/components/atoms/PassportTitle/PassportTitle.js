@@ -1,6 +1,6 @@
 import React from 'react'
 import './PassportTitle.css'
-import shield from './shield.svg'
+import { BsShieldLockFill } from 'react-icons/bs'
 
 export default function PassportTitle() {
     return (
@@ -9,15 +9,7 @@ export default function PassportTitle() {
             <p className="ContractData__description">
                 Делает Вас надежным арендодателем
             </p>
-            <img
-                src={shield}
-                alt=""
-                style={{
-                    position: 'relative',
-                    top: -35,
-                    left: 200,
-                }}
-            />
+            <BsShieldLockFill fill="#3cbf32" size="1.7rem" />
         </div>
     )
 }

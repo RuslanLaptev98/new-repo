@@ -1,7 +1,7 @@
 import React from 'react'
 import './EditIcon.css'
-import edit from './edit.svg'
-import save from './save.svg'
+import { AiFillEdit } from 'react-icons/ai'
+import { AiOutlineSave } from 'react-icons/ai'
 
 export default function EditIcon({ editable, setEditable }) {
     return (
@@ -12,9 +12,9 @@ export default function EditIcon({ editable, setEditable }) {
             }}
         >
             {!editable ? (
-                <img src={edit} alt="edit" />
+                <AiFillEdit fill="#fff" size="1.3rem" />
             ) : (
-                <img src={save} alt="save" />
+                <AiOutlineSave fill="#fff" size="1.3rem" />
             )}
         </div>
     )

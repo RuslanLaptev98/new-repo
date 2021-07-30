@@ -3,3 +3,8 @@
     text-align: right;
     padding-bottom: 14px;
 }
+.PassportTitle svg {
+    position: relative;
+    left: 205px;
+    top: -33px;
+}

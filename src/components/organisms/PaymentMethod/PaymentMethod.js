@@ -2,22 +2,26 @@ import React, { useState } from 'react'
 import './PaymentMethod.css'
 import PaymentCard from '../../atoms/PaymentCard/PaymentCard'
 import Button from '../../atoms/Button/Button'
-import iconCardActive from './card.svg'
-import iconCardInactive from './card-black.svg'
-import iconAccountActive from './account-white.svg'
-import iconAccountInactive from './account.svg'
+import { BsCreditCard } from 'react-icons/bs'
+import { AiOutlineFileProtect } from 'react-icons/ai'
 
 export default function PaymentMethod() {
     const paymentCards = [
         {
             id: 0,
             description: ['Банковская карта', 'Комиссия 1.9% + 30₽'],
-            icons: [iconCardActive, iconCardInactive],
+            icons: [
+                <BsCreditCard fill="#fff" size="2.3rem" />,
+                <BsCreditCard fill="#212429" size="2.3rem" />,
+            ],
         },
         {
             id: 1,
             description: ['Лицевой счет', 'Комиссия 1%'],
-            icons: [iconAccountActive, iconAccountInactive],
+            icons: [
+                <AiOutlineFileProtect fill="#fff" size="2.3rem" />,
+                <AiOutlineFileProtect fill="#212429" size="2.3rem" />,
+            ],
         },
     ]
     const [active, setActive] = useState(0)

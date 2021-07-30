@@ -1,6 +1,6 @@
 import React from 'react'
 import './PaymentCard.css'
-import tick from './tick.svg'
+import { TiTick } from 'react-icons/ti'
 
 export default function PaymentCard({ active, setActive, card }) {
     return (
@@ -12,29 +12,12 @@ export default function PaymentCard({ active, setActive, card }) {
             }
             onClick={() => setActive(card.id)}
         >
-            <div
-                className="PaymentCard__tick"
-                style={
-                    active === card.id
-                        ? {
-                              backgroundImage: `url(${tick})`,
-                          }
-                        : {}
-                }
-            ></div>
-            {active === card.id ? (
-                <img
-                    src={card.icons[0]}
-                    alt=""
-                    className="PaymentCard__image"
-                />
-            ) : (
-                <img
-                    src={card.icons[1]}
-                    alt=""
-                    className="PaymentCard__image"
-                />
-            )}
+            <div className="PaymentCard__tick">
+                {active === card.id ? <TiTick fill="#3cbf32" /> : null}
+            </div>
+            <div className="PaymentCard__cardicon">
+                {active === card.id ? card.icons[0] : card.icons[1]}
+            </div>
 
             {card.description.map((text) => (
                 <div className="PaymentCard__text">{text}</div>

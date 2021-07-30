@@ -19,6 +19,10 @@
     border: 1px solid #ccc;
     background-position-x: -1px;
     background-position-y: -1px;
+    background-color: #fff;
+}
+.CustomRadio__tick-active {
+    background-color: #3cbf32;
 }
 .ContractData__radioGroup .CustomRadio {
     padding: 0px;

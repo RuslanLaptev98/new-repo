@@ -1,6 +1,6 @@
 import React from 'react'
 import './ConditionsCard.css'
-import tick from './tick.svg'
+import { TiTick } from 'react-icons/ti'
 
 export default function ConditionsCard({ condition, active, setActive }) {
     return (
@@ -12,16 +12,9 @@ export default function ConditionsCard({ condition, active, setActive }) {
             }
             onClick={() => setActive(condition.id)}
         >
-            <div
-                className="ConditionsCard__tick"
-                style={
-                    active === condition.id
-                        ? {
-                              backgroundImage: `url(${tick})`,
-                          }
-                        : {}
-                }
-            ></div>
+            <div className="ConditionsCard__tick">
+                {active === condition.id ? <TiTick fill="#3cbf32" /> : null}
+            </div>
             <div className="ConditionsCard__title">{condition.title}</div>
             <div className="ConditionsCard__text">{condition.description}</div>
         </div>

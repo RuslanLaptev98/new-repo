@@ -1,6 +1,6 @@
 import React from 'react'
 import './FileDownload.css'
-import camera from './camera.svg'
+import { AiOutlineCamera } from 'react-icons/ai'
 
 export default function FileDownload() {
     return (
@@ -13,7 +13,7 @@ export default function FileDownload() {
             </p>
             <div className="FileDownload__file">
                 <div className="FileDownload__camera">
-                    <img src={camera} alt="camera" />
+                    <AiOutlineCamera fill="#fff" size="1.6rem" />
                 </div>
                 <div className="FileDownload__download">Загрузить файл</div>
             </div>
