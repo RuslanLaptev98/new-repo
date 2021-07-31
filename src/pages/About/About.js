@@ -14,7 +14,7 @@ export default function About() {
         <div className="About">
             <div className="container">
                 {/* Block 1 */}
-                <div className="About__block About__block-whyUs">
+                <div className="About__block ">
                     <div className="About__title">
                         <CustomTxt
                             txtArr={aboutCardLong.title}
@@ -27,7 +27,7 @@ export default function About() {
                             }}
                         />
                     </div>
-                    <div className="About__content bg">
+                    <div className="About__content bg About__content-whyUs">
                         <div className="About__wrap">
                             {aboutCardLong.aboutCard.map((card, i) => (
                                 <AboutCardLong
@@ -41,7 +41,7 @@ export default function About() {
                 </div>
 
                 {/* Block 2 */}
-                <div className="About__block About__block-whyRent">
+                <div className="About__block ">
                     <div className="About__title">
                         <CustomTxt
                             txtArr={aboutCardBox.title}
@@ -50,14 +50,16 @@ export default function About() {
                                 textTransform: 'uppercase',
                                 fontWeight: 900,
                                 textAlign: 'center',
-                                padding: '80px 0px',
+                                paddingTop: '80px',
                             }}
                         />
                     </div>
-                    <div className="About__squarecards">
-                        {aboutCardBox.aboutCard.map((card, i) => (
-                            <AboutCardBox key={card.id} card={card} />
-                        ))}
+                    <div className="About__content About__content-whyRent">
+                        <div className="About__squarecards">
+                            {aboutCardBox.aboutCard.map((card, i) => (
+                                <AboutCardBox key={card.id} card={card} />
+                            ))}
+                        </div>
                     </div>
                 </div>
 
@@ -71,7 +73,7 @@ export default function About() {
                                 textTransform: 'uppercase',
                                 fontWeight: 900,
                                 textAlign: 'center',
-                                paddingTop: '169px',
+                                paddingTop: '100px',
                                 paddingBottom: '51px',
                             }}
                         />
@@ -86,6 +88,7 @@ export default function About() {
                                 textAlign: 'center',
                                 maxWidth: '845px',
                                 margin: 'auto',
+                                paddingBottom: 110,
                             }}
                         />
                     </div>

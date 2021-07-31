@@ -1,6 +1,8 @@
 .About__content {
     padding: 40px 0px;
 }
+
+/* Блок 1 */
 .About__content.bg {
     position: relative;
 }
@@ -19,11 +21,16 @@
     max-width: 90%;
     margin: auto;
 }
+
+/* Блок 2 */
 .About__squarecards {
+    padding-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+/* Блок 3 */
 .About__block-paragraph {
     position: relative;
 }
@@ -31,55 +38,57 @@
     content: '';
     width: 100%;
     height: 100%;
-
     background-image: url(./background-small.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    top: 100px;
 }
-.About__block-whyUs {
+
+/* Боковые картинки */
+.About__content-whyUs {
     position: relative;
 }
-.About__block-whyUs::before {
+.About__wrap::before {
     content: '';
     background-image: url(./definitions-images/headphones.svg);
     background-repeat: no-repeat;
     position: absolute;
     width: 122px;
     height: 122px;
+    top: -100px;
+    left: 0;
 }
-.About__block-whyUs::after {
+.About__content-whyUs::after {
     content: '';
     background-image: url(./definitions-images/switchblade.svg);
     background-repeat: no-repeat;
     position: absolute;
     width: 220px;
     height: 207px;
-    top: 0;
+    top: -100px;
     right: 0;
 }
-.About__block-whyRent {
+.About__content-whyRent {
     position: relative;
 }
-.About__block-whyRent::before {
+.About__content-whyRent::before {
     content: '';
     background-image: url(./definitions-images/sofa.svg);
     background-repeat: no-repeat;
     position: absolute;
     width: 276px;
     height: 291px;
-    top: -140px;
-    left: -80px;
+    top: -260px;
+    left: -88px;
 }
-.About__block-whyRent::after {
+.About__content-whyRent::after {
     content: '';
     background-image: url(./definitions-images/scooter.svg);
     background-repeat: no-repeat;
     position: absolute;
     width: 255px;
     height: 299px;
-    top: -180px;
+    top: -300px;
     right: 0;
 }
