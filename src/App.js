@@ -1,9 +1,9 @@
-import About from './components/pages/About/About'
+import Promote from './components/pages/Promote/Promote'
 
 function App() {
     return (
         <div className="App">
-            <About />
+            <Promote />
         </div>
     )
 }

@@ -1,0 +1,23 @@
+.PromotePriceCard {
+    background-color: #fff;
+    box-shadow: 0px 14px 54px rgba(33, 36, 41, 0.25);
+    transform: matrix(1, 0.13, 0, 1, 0, 0);
+    border-radius: 30px;
+    width: 337px;
+    min-height: 400px;
+
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+.PromotePriceCard__content {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    transform: matrix(1, -0.13, 0, 1, 0, 0);
+
+    padding: 0px 30px 50px 30px;
+}
+.PromotePriceCard__description {
+    padding-bottom: 1rem;
+}
