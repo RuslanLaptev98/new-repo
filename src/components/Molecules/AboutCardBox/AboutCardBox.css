@@ -1,0 +1,19 @@
+.AboutCardBox {
+    background: #ffffff;
+    box-shadow: 0px 14px 40px rgba(33, 36, 41, 0.16);
+    border-radius: 24px;
+    width: 375px;
+    height: 375px;
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.AboutCardBox__description {
+    padding-top: 39px;
+}
+.AboutCardBox__arrowIcon {
+    padding-top: 20px;
+}

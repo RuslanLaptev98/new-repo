@@ -1,0 +1,85 @@
+.About__content {
+    padding: 40px 0px;
+}
+.About__content.bg {
+    position: relative;
+}
+.About__content.bg::before {
+    content: '';
+    width: calc(100% + 120px);
+    height: 100%;
+    background-image: url(./background-big.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: -120px;
+}
+.About__wrap {
+    max-width: 90%;
+    margin: auto;
+}
+.About__squarecards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.About__block-paragraph {
+    position: relative;
+}
+.About__block-paragraph::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    background-image: url(./background-small.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 100px;
+}
+.About__block-whyUs {
+    position: relative;
+}
+.About__block-whyUs::before {
+    content: '';
+    background-image: url(./definitions-images/headphones.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 122px;
+    height: 122px;
+}
+.About__block-whyUs::after {
+    content: '';
+    background-image: url(./definitions-images/switchblade.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 220px;
+    height: 207px;
+    top: 0;
+    right: 0;
+}
+.About__block-whyRent {
+    position: relative;
+}
+.About__block-whyRent::before {
+    content: '';
+    background-image: url(./definitions-images/sofa.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 276px;
+    height: 291px;
+    top: -140px;
+    left: -80px;
+}
+.About__block-whyRent::after {
+    content: '';
+    background-image: url(./definitions-images/scooter.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 255px;
+    height: 299px;
+    top: -180px;
+    right: 0;
+}
